@@ -1,0 +1,8 @@
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/PCB_STACK.dir
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/Geant4_FlexBond-main.dir
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/edit_cache.dir
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/rebuild_cache.dir
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/list_install_components.dir
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/install.dir
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/install/local.dir
+/home/luca/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles/install/strip.dir

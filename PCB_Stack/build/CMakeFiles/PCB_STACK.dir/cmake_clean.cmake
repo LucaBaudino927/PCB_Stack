@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/PCB_STACK.dir/sim.cc.o"
+  "CMakeFiles/PCB_STACK.dir/sim.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/Copper.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/Copper.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/Glue.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/Glue.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o.d"
+  "CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o"
+  "CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o.d"
+  "PCB_STACK"
+  "PCB_STACK.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/PCB_STACK.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

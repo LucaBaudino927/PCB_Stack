@@ -1,0 +1,66 @@
+/control/verbose 0
+/run/verbose 0
+/vis/verbose errors
+
+#reset geometry after the first initialization
+/run/printProgress 0
+
+#
+# Defaults:
+#
+#	add new geometries here
+#
+/detector/verboseDetConstruction false
+/detector/mapsFoil true
+
+#
+# Defaults:
+#
+#	add new geometries here
+#
+/detector/constructAlpidePads true
+/detector/constructEpoxyGlueLayer true
+/detector/constructKaptonLayer true
+/detector/constructCopperLayer true
+/detector/constructSolderBalls true
+/detector/constructPCB true
+/detector/alpideXDimension 30. #mm
+/detector/alpideYDimension 15. #mm
+/detector/alpideThickness 50. #um
+/detector/alpidePadRadius 150. #um
+/detector/glueThickness 25. #um
+/detector/kaptonThickness 50. #um
+/detector/copperThickness 5. #um
+
+# Initialize kernel
+/run/reinitializeGeometry
+/run/geometryModified
+/run/initialize
+
+#
+# Defaults:
+#
+#	add new settings here
+#
+
+/vis/drawVolume
+
+############# Repeat commands for visualization #############
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+#/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 1
+/vis/scene/add/axes
+/vis/scene/add/eventID
+/vis/scene/endOfEventAction accumulate
+#/vis/ogl/set/displayListLimit 5000000
+#If you want to add a scale in the viewer
+/vis/scene/add/scale 30 mm
+#############################################################
+
+#/run/beamOn 30
+

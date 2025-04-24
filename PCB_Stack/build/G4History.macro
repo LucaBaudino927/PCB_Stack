@@ -1,0 +1,205 @@
+/detector/verboseDetConstruction false
+/detector/mapsFoil true
+/detector/constructAlpidePads false
+/detector/constructEpoxyGlueLayer true
+/detector/constructKaptonLayer true
+/detector/constructCopperLayer true
+/detector/constructSolderBalls false
+/detector/constructPCB true
+/detector/alpideXDimension 30.
+/detector/alpideYDimension 15.
+/detector/alpideThickness 50.
+/detector/alpidePadRadius 150.
+/detector/glueThickness 25.
+/detector/kaptonThickness 50.
+/detector/copperThickness 5.
+/run/numberOfThreads 8
+/run/printProgress 0
+/run/verbose 1
+/run/initialize
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointVector 1 1 1
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 1
+/vis/scene/notifyHandlers scene-0
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
+/vis/scene/add/eventID
+/vis/scene/notifyHandlers
+/vis/scene/endOfEventAction accumulate
+/vis/scene/add/scale 5 cm
+/vis/scene/notifyHandlers
+/control/execute gui.mac
+/gui/addMenu file File
+/gui/addButton file Quit exit
+/gui/addMenu run Run
+/gui/addButton run run1 "/control/execute run1.mac"
+/gui/addButton run run2 "/control/execute run2.mac"
+/gui/addButton run multipleRuns "/control/execute det.mac"
+/gui/addButton run beamOn1000 "/run/beamOn 1000"
+/gui/addMenu generator Generator
+/gui/addButton generator "randomizePrimary ON" "/generator/randomizePrimary true"
+/gui/addButton generator "randomizePrimary OFF" "/generator/randomizePrimary false"
+/gui/addButton generator "10 keV" "/generator/momentum 10 keV"
+/gui/addButton generator "10 MeV" "/generator/momentum 10 MeV"
+/gui/addButton generator "10 GeV" "/generator/momentum 10 GeV"
+/gui/addButton generator "e+" "/gun/particle e+"
+/gui/addButton generator "e-" "/gun/particle e-"
+/gui/addButton generator "kaon+" "/gun/particle kaon+"
+/gui/addButton generator "neutron" "/gun/particle neutron"
+/gui/addButton generator "proton" "/gun/particle proton"
+/gui/addMenu viewer Viewer
+/gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
+/gui/addButton viewer "Set style wireframe" "/vis/viewer/set/style wireframe"
+/gui/addButton viewer "Refresh viewer" "/vis/viewer/refresh"
+/gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
+/gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
+/gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
+/run/beamOn 1
+/vis/scene/notifyHandlers scene-0
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicAlpide_pv_0 1
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerGlue_pv_1 2
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperGlue_pv_2 3
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicLowerKapton_pv_3 4
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicUpperKapton_pv_4 5
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6
+/vis/set/touchable physWorld 0 av_1_impr_1_logicCopper_pv_5 6

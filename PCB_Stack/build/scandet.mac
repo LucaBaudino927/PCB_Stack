@@ -1,0 +1,3 @@
+/generator/beamPosition {Y_BeamPosition}
+#/run/reinitializeGeometry
+/run/beamOn 100
