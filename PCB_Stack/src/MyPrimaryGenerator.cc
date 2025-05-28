@@ -11,8 +11,9 @@ MyPrimaryGenerator::MyPrimaryGenerator(){
 	fPositron = particleTable->FindParticle("e+");
 	fKaon = particleTable->FindParticle("kaon+");
 	fNeutron = particleTable->FindParticle("neutron");
+	fGeantino = particleTable->FindParticle("geantino");
 
-	fParticleGun->SetParticlePosition(G4ThreeVector(0., Y_BeamPosition, -2.*cm));
+	fParticleGun->SetParticlePosition(G4ThreeVector(X_BeamPosition, Y_BeamPosition, -2.*cm));
 	fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
 	//fParticleGun->SetParticleMomentum(fMomentum);
 
@@ -24,6 +25,8 @@ MyPrimaryGenerator::MyPrimaryGenerator(){
 
 	// define commands for this class
 	DefineCommands();
+	
+	fScanWidth = 10.*mm;
 
 }
 
@@ -58,7 +61,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent){
 				break;
 		}
 		fParticleGun->SetParticleDefinition(particle);
-		fParticleGun->SetParticlePosition(G4ThreeVector(0., Y_BeamPosition, -2.*cm));
+		fParticleGun->SetParticlePosition(G4ThreeVector(X_BeamPosition, Y_BeamPosition, -2.*cm));
 		auto pp = fMomentum + (G4UniformRand() - 0.5) * fSigmaMomentum;
 		//fParticleGun->SetParticleMomentum(pp);
 		auto mass = particle->GetPDGMass();
@@ -74,7 +77,13 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event* anEvent){
 		auto KinEnergy = std::sqrt(fMomentum * fMomentum + Mass * Mass) - Mass;
 		//G4cout<<"---GeneratePrimaries()---fMomentum = "<<fMomentum/GeV<<" GeV, KinEnergy = "<<KinEnergy/GeV<<" GeV"<<G4endl;
 		fParticleGun->SetParticleEnergy(KinEnergy);	
-		fParticleGun->SetParticlePosition(G4ThreeVector(0., Y_BeamPosition, -2.*cm));
+		fParticleGun->SetParticlePosition(G4ThreeVector(X_BeamPosition, Y_BeamPosition, -2.*cm));
+	}
+		
+	if(fRandomizeBeamPosition){
+		auto x = X_BeamPosition + (G4UniformRand() - 0.5) * fScanWidth;
+		auto y = Y_BeamPosition + (G4UniformRand() - 0.5) * fScanWidth;
+		fParticleGun->SetParticlePosition(G4ThreeVector(x, y, -2.*cm));
 	}
 	
         fParticleGun->GeneratePrimaryVertex(anEvent);
@@ -113,11 +122,28 @@ void MyPrimaryGenerator::DefineCommands()
 	sigmaAngleCmd.SetRange("t>=0.");
 	sigmaAngleCmd.SetDefaultValue("1.");
 	
-	// beamPosition command
-	auto& beamPositionCmd = fMessenger->DeclarePropertyWithUnit("beamPosition", "mm", Y_BeamPosition, "Y coordinate of the beam in mm");
-	beamPositionCmd.SetParameterName("bp", true);
-	//beamPositionCmd.SetRange("bm>=0.");
-	beamPositionCmd.SetDefaultValue("-7.4");
+	// beamYPosition command
+	auto& beamYPositionCmd = fMessenger->DeclarePropertyWithUnit("beamYPosition", "mm", Y_BeamPosition, "Y coordinate of the beam in mm");
+	beamYPositionCmd.SetParameterName("Ybp", true);
+	//beamYPositionCmd.SetRange("Ybp>=0.");
+	beamYPositionCmd.SetDefaultValue("-3.4");
+	
+	// beamXPosition command
+	auto& beamXPositionCmd = fMessenger->DeclarePropertyWithUnit("beamXPosition", "mm", X_BeamPosition, "X coordinate of the beam in mm");
+	beamXPositionCmd.SetParameterName("Xbp", true);
+	//beamXPositionCmd.SetRange("Xbp>=0.");
+	beamXPositionCmd.SetDefaultValue("0");
+	
+	// randomizeBeamPosition command
+	auto& randomBeamPosCmd = fMessenger->DeclareProperty("randomizeBeamPosition", fRandomizeBeamPosition, "Boolean flag for randomize particle beam position");
+	randomBeamPosCmd.SetParameterName("flag", true);
+	randomBeamPosCmd.SetDefaultValue("false");
+	
+	// scanWidth command
+	auto& scanWidthCmd = fMessenger->DeclarePropertyWithUnit("scanWidth", "mm", fScanWidth, "Width of the possible beam positions.");
+	scanWidthCmd.SetParameterName("scanW", true);
+	//scanWidthCmd.SetRange("scanW>=0.");
+	scanWidthCmd.SetDefaultValue("10");
   
 }
 

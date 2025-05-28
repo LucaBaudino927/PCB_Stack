@@ -85,7 +85,23 @@ CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+ /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
+ /usr/include/c++/11/bits/exception.h \
+ /usr/include/c++/11/bits/memoryfwd.h \
+ /usr/include/c++/11/bits/stl_construct.h \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/ext/alloc_traits.h \
+ /usr/include/c++/11/bits/alloc_traits.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/initializer_list \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/functional_hash.h \
+ /usr/include/c++/11/bits/hash_bytes.h \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/bits/vector.tcc \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4UserSteppingAction.hh \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4Step.hh \
  /usr/include/c++/11/cstdlib \
@@ -95,20 +111,17 @@ CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: \
  /usr/include/c++/11/complex /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
- /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
- /usr/include/c++/11/cwchar /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
+ /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/c++/11/exception /usr/include/c++/11/bits/exception.h \
- /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
- /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/new /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/char_traits.h /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -134,20 +147,11 @@ CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/11/bits/locale_classes.h /usr/include/c++/11/string \
- /usr/include/c++/11/bits/allocator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
- /usr/include/c++/11/ext/new_allocator.h \
  /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
- /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/initializer_list \
- /usr/include/c++/11/bits/basic_string.h \
- /usr/include/c++/11/ext/alloc_traits.h \
- /usr/include/c++/11/bits/alloc_traits.h \
- /usr/include/c++/11/bits/stl_construct.h /usr/include/c++/11/string_view \
- /usr/include/c++/11/bits/functional_hash.h \
+ /usr/include/c++/11/bits/basic_string.h /usr/include/c++/11/string_view \
  /usr/include/c++/11/bits/string_view.tcc \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -208,11 +212,7 @@ CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/c++/11/bits/erase_if.h \
  /usr/include/c++/11/pstl/execution_defs.h \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4String.hh \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
@@ -425,171 +425,4 @@ CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4ToolsAnalysisManager.icc \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4GenericAnalysisManager.icc \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4GenericFileManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4GenericFileManager.icc \
- /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/MyEventAction.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UserEventAction.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Event.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/evtdefs.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4PrimaryVertex.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4PrimaryParticle.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4HCofThisEvent.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VHitsCollection.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4DCofThisEvent.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VDigiCollection.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4TrajectoryContainer.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VTrajectory.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VUserEventInformation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SystemOfUnits.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SDManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4HCtable.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SDStructure.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VSensitiveDetector.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4CollectionNameVector.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VHit.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VReadOutGeometry.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SensitiveVolumeList.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VSDFilter.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4THitsCollection.hh \
- /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/MySensitiveDetectorHit.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VHit.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Allocator.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4RotationMatrix.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Threading.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ThreeVector.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/globals.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4AttDef.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4TypeKey.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4AttValue.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4LogicalVolume.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Colour.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Transform3D.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UIcommand.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UnitsTable.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UnitsTable.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VVisManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VisAttributes.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/graphics_reps_defs.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Colour.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Color.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VisAttributes.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ios.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4AttDefStore.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4RunManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Event.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4EventManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4StackManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UserStackingAction.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ClassificationOfNewTrack.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4StackedTrack.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4TrackStack.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SmartTrackStack.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SubEventTrackStack.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SubEvent.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4PrimaryTransformer.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParticleTable.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParticleTableIterator.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParticleTable.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4TrackingManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SteppingManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Navigator.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4NormalNavigation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VNavigation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VSolid.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VSolid.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4AuxiliaryNavServices.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4AuxiliaryNavServices.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4NormalNavigation.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VoxelNavigation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4NavigationLogger.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4BlockingList.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4BlockingList.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SmartVoxelProxy.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SmartVoxelProxy.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SmartVoxelNode.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SmartVoxelNode.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SmartVoxelHeader.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4SmartVoxelHeader.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VoxelNavigation.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParameterisedNavigation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VPVParameterisation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VVolumeMaterialScanner.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParameterisedNavigation.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ReplicaNavigation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ReplicaNavigation.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4RegularNavigation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VExternalNavigation.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Navigator.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4NoProcess.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VProcess.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/Randomize.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/Randomize.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/DualRand.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandomEngine.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandomEngine.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/JamesRandom.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/MixMaxRng.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/MTwistEngine.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RanecuEngine.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RanluxEngine.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RanluxppEngine.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RanshiEngine.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandBinomial.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/Random.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/Random.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Utility/memory.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandBinomial.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandFlat.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Utility/thread_local.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandFlat.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandChiSquare.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandChiSquare.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandExponential.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandExponential.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandBit.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandBit.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGamma.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGamma.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGauss.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGauss.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGaussQ.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGaussQ.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGeneral.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandGeneral.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandLandau.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandLandau.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandPoisson.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandPoisson.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandStudentT.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4PhysicsTable.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4PhysicsTable.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VParticleChange.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VParticleChange.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ForceCondition.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4GPILSelection.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParticleChange.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParticleChange.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ProcessType.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ProcessManager.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ProcessVector.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ProcessVector.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4ProcessManager.icc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UserSteppingAction.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4VSteppingVerbose.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/trkgdefs.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4TrackingMessenger.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UserTrackingAction.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4RunManagerKernel.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/rundefs.hh \
- /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/list.tcc \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4HCtable.hh \
- /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/Constants.hh \
- /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/StaticInfo.hh
+ /home/luca/geant4-v11.3.0-install/include/Geant4/G4GenericFileManager.icc

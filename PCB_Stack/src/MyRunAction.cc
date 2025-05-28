@@ -48,82 +48,42 @@ void MyRunAction::BeginOfRunAction(const G4Run* run){
 	// Reset histograms from previous run
 	analysisManager->Reset();
 	
-	analysisManager->OpenFile("output"+strRunID.str()+".root");	
+	analysisManager->OpenFile("output"+strRunID.str()+".root");
 	
 	//----------------------------------------------------------------------------------------------------------------
-	// Creo le ntuple in base alle flag di costruzione dei detector 
-	// inizializzate in MyDetectorConstruction (e prese dal file di configurazione)
-	analysisManager->CreateNtuple("MapsFoil_EnergyDepositionPerEvent", "EnergyDepositionPerEvent");
-	analysisManager->CreateNtupleDColumn("AlpideEnergy");  						// column Id = 0
-	if(StaticInfo::GetDetectorFlag("constructAlpidePads")) {
-		for(G4int i = 0; i < NofPads; i++){
-			analysisManager->CreateNtupleDColumn("AlpidePad1Energy_"+std::to_string(i));  	// column Id: from 1 to 1 + (#pad - 1)*2
-			analysisManager->CreateNtupleDColumn("AlpidePad2Energy_"+std::to_string(i));  	// column Id: from 2 to 2 + (#pad - 1)*2
-		}
-	}
-	if(StaticInfo::GetDetectorFlag("constructEpoxyGlueLayer")) {
-		analysisManager->CreateNtupleDColumn("LowerGlueEnergy");  				// column Id: from 3 to 3 + (#pad - 1)*2
-		analysisManager->CreateNtupleDColumn("UpperGlueEnergy");  				// column Id: from 4 to 4 + (#pad - 1)*2
-	}
-	if(StaticInfo::GetDetectorFlag("constructKaptonLayer")) {
-		analysisManager->CreateNtupleDColumn("LowerKaptonEnergy");  				// column Id: from 5 to 5 + (#pad - 1)*2
-		analysisManager->CreateNtupleDColumn("UpperKaptonEnergy");  				// column Id: from 6 to 6 + (#pad - 1)*2
-	}
-	if(StaticInfo::GetDetectorFlag("constructCopperLayer")) {
-		analysisManager->CreateNtupleDColumn("CopperEnergy");  					// column Id: from 7 to 7 + (#pad - 1)*2
-	}
-	if(StaticInfo::GetDetectorFlag("constructSolderBalls")) {
-		for(G4int i = 0; i < NofPads; i++){
-			analysisManager->CreateNtupleDColumn("SolderBallEnergy_"+std::to_string(i));	// column Id: from 8 to 8 + (#pad - 1)*3
-		}
-	}
+	// Creo le ntuple in base alle flag di costruzione dei detector
+	
+	// X/X0
+	analysisManager->CreateNtuple("Material Budget", "Material Budget");
+	analysisManager->CreateNtupleDColumn("MaterialBudget");
 	analysisManager->FinishNtuple(0);
 	
-	//Energy deposition for each event
-	analysisManager->CreateNtuple("PCB_EnergyDepositionPerEvent", "PCB_EnergyDepositionPerEvent");
-	if(StaticInfo::GetDetectorFlag("constructPCB")) { 
-		analysisManager->CreateNtupleDColumn("fPCBedep");
-	}
+	// inizializzate in MyDetectorConstruction (e prese dal file di configurazione)
+	analysisManager->CreateNtuple("EnergyDepositionPerEvent", "EnergyDepositionPerEvent");
+	analysisManager->CreateNtupleDColumn("TotalEnergyDeposition");
 	analysisManager->FinishNtuple(1);
-	
+
 	//Scattering Angle Distribution in each volume for a fixed particle (proton)
 	analysisManager->CreateNtuple("ScatteringAngles", "ScatteringAngles");
-	analysisManager->CreateNtupleDColumn("Alpide");
-	if(StaticInfo::GetDetectorFlag("constructEpoxyGlueLayer")) analysisManager->CreateNtupleDColumn("LowerGlue");
-	if(StaticInfo::GetDetectorFlag("constructEpoxyGlueLayer")) analysisManager->CreateNtupleDColumn("UpperGlue");
-	if(StaticInfo::GetDetectorFlag("constructKaptonLayer"))    analysisManager->CreateNtupleDColumn("LowerKapton");
-	if(StaticInfo::GetDetectorFlag("constructKaptonLayer"))    analysisManager->CreateNtupleDColumn("UpperKapton");
-	if(StaticInfo::GetDetectorFlag("constructCopperLayer"))    analysisManager->CreateNtupleDColumn("Copper");
-	if(StaticInfo::GetDetectorFlag("constructPCB")) 	   analysisManager->CreateNtupleDColumn("PCB");
+	analysisManager->CreateNtupleDColumn("TotalScatteringAngle");
 	analysisManager->FinishNtuple(2);
-	
+
 	//Energy Distribution of particles entrying in a volume for a fixed particle (proton)
 	analysisManager->CreateNtuple("Energy before volume", "Energy before volume");
-	analysisManager->CreateNtupleDColumn("Alpide");
-	if(StaticInfo::GetDetectorFlag("constructEpoxyGlueLayer")) analysisManager->CreateNtupleDColumn("LowerGlue");
-	if(StaticInfo::GetDetectorFlag("constructEpoxyGlueLayer")) analysisManager->CreateNtupleDColumn("UpperGlue");
-	if(StaticInfo::GetDetectorFlag("constructKaptonLayer"))    analysisManager->CreateNtupleDColumn("LowerKapton");
-	if(StaticInfo::GetDetectorFlag("constructKaptonLayer"))    analysisManager->CreateNtupleDColumn("UpperKapton");
-	if(StaticInfo::GetDetectorFlag("constructCopperLayer"))    analysisManager->CreateNtupleDColumn("Copper");
-	if(StaticInfo::GetDetectorFlag("constructPCB")) 	   analysisManager->CreateNtupleDColumn("PCB");
+	analysisManager->CreateNtupleDColumn("PrimaryBeamEnergy");
 	analysisManager->FinishNtuple(3);
 	
-	//Energy Distribution of particles entrying in a volume for a fixed particle (proton)
-	analysisManager->CreateNtuple("DeltaE in volume", "DeltaE in volume");
-	analysisManager->CreateNtupleDColumn("Alpide");
-	if(StaticInfo::GetDetectorFlag("constructEpoxyGlueLayer")) analysisManager->CreateNtupleDColumn("LowerGlue");
-	if(StaticInfo::GetDetectorFlag("constructEpoxyGlueLayer")) analysisManager->CreateNtupleDColumn("UpperGlue");
-	if(StaticInfo::GetDetectorFlag("constructKaptonLayer"))    analysisManager->CreateNtupleDColumn("LowerKapton");
-	if(StaticInfo::GetDetectorFlag("constructKaptonLayer"))    analysisManager->CreateNtupleDColumn("UpperKapton");
-	if(StaticInfo::GetDetectorFlag("constructCopperLayer"))    analysisManager->CreateNtupleDColumn("Copper");
-	if(StaticInfo::GetDetectorFlag("constructPCB")) 	   analysisManager->CreateNtupleDColumn("PCB");
-	analysisManager->FinishNtuple(4);
+	//se L = 10 mm -> 100 bin mi danno bin da 100 um
+	G4int id = analysisManager->CreateH2("Material Budget XY", "Material Budget XY",  200, -5, 5, 200, -5, 5);
+	//analysisManager->SetH2Title(G4int id, const G4String& title);
+	analysisManager->SetH2XAxisTitle(id, "X [mm]");
+	analysisManager->SetH2YAxisTitle(id, "Y [mm]");
+	analysisManager->SetH2ZAxisTitle(id, "X/X0");
 	
 	// Set ntuple output file
 	//analysisManager->SetNtupleFileName(0, "output"+strRunID.str()+".root");
 	//analysisManager->SetNtupleFileName(1, "output"+strRunID.str()+".root");
 	//analysisManager->SetNtupleFileName(2, "output"+strRunID.str()+".root");
-	
 	
 
 }

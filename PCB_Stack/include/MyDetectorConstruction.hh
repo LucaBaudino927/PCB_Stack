@@ -50,7 +50,7 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
     public:
 
-        MyDetectorConstruction();
+        MyDetectorConstruction(std::vector<G4String>);
         ~MyDetectorConstruction() override;
         G4LogicalVolume *GetScoringVolume() const { return fScoringVolume; }//energy deposit
         G4VPhysicalVolume* Construct() override;
@@ -60,8 +60,9 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
     private:
    
         void DefineMaterials();
-        void ConstructMapsFoil(G4AssemblyVolume* assemblyDetector);
-        void ConstructPCB(G4AssemblyVolume* assemblyDetector);
+        void ConstructLayer(G4AssemblyVolume* assemblyDetector, G4Material* material, G4double Z, G4double thickness, G4int layerID, G4String type);
+	void ConstructStackup(G4AssemblyVolume* assemblyDetector);
+	void ConstructPCB(G4AssemblyVolume* assemblyDetector);
         
         G4GenericMessenger *fMessenger = nullptr;
         G4double xWorld, yWorld, zWorld;
@@ -75,6 +76,7 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         G4Material *Si			 = nullptr;
         G4Material *Al			 = nullptr;
         G4Material *epoxyGlue		 = nullptr;
+        G4Material *Cu			 = nullptr;
         G4Element *C			 = nullptr;
         G4Element *Na			 = nullptr;
         G4Element *I			 = nullptr;
@@ -84,34 +86,41 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         
         // G4GenericMessenger settings
         G4bool verboseDetConstr = false;
-        //flags to declare the detector
-        G4bool isMapsFoil;
         //flags to declare the setup of the detector
-        G4bool constructAlpidePads, constructEpoxyGlueLayer, constructKaptonLayer, constructCopperLayer, constructSolderBalls, constructPCB;
+        G4bool constructMetal, constructGlue, constructDielectric, constructCoverlay, SingleLayer, StackUp, PCB;
         //flags to tune the setup: if they are specified in the macro -> use those values otherwise use default values
-        G4double alpideXFromMessenger 		= 0.;
-        G4double alpideYFromMessenger 		= 0.;
-        G4double alpideThicknessFromMessenger 	= 0.;
-        G4double alpidePadRadiusFromMessenger 	= 0.;
-        G4double glueThicknessFromMessenger 	= 0.;
-        G4double kaptonThicknessFromMessenger 	= 0.;
-        G4double copperThicknessFromMessenger 	= 0.;
+        G4double NofLayersFromMessenger 		= 0.;
+        G4double coverlayThicknessFromMessenger 	= 0.;
+        G4double metalThicknessFromMessenger 		= 0.;
+        G4double glueThicknessFromMessenger 		= 0.;
+        G4double dielectricThicknessFromMessenger 	= 0.;
+        G4double LayerThicknessFromMessenger	 	= 0.;
+        
+        G4double coverlayThickness 			= 0.;
+	G4double metalThickness	 			= 0.;
+	G4double glueThickness	 			= 0.;
+	G4double dielectricThickness			= 0.;
         
         //Logical Volumes
-        G4LogicalVolume *fLogicAlpide 		= nullptr;
-        G4LogicalVolume *fLogicLowerGlue 	= nullptr;
-        G4LogicalVolume *fLogicUpperGlue 	= nullptr;
-        G4LogicalVolume *fLogicLowerKapton 	= nullptr;
-        G4LogicalVolume *fLogicUpperKapton 	= nullptr;
-        G4LogicalVolume *fLogicCopper		= nullptr;
-        //G4LogicalVolume *fPCBUpperLayerLV	= nullptr;
-        //G4LogicalVolume *fPCBMiddleLayerLV	= nullptr;
-        //G4LogicalVolume *fPCBLowerLayerLV	= nullptr;
-        std::vector<G4LogicalVolume*> fLogicalAlpidePad1;
-        std::vector<G4LogicalVolume*> fLogicalAlpidePad2;
-        std::vector<G4LogicalVolume*> fLogicSolderBalls;
-               
-
+        std::vector<G4LogicalVolume*> fLogicVolumeList;
+        
+        G4String LayerMaterialFromMessenger;
+        G4String coverlayMaterialFromMessenger;
+        G4String metalMaterialFromMessenger;
+        G4String glueMaterialFromMessenger;
+        G4String dielectricMaterialFromMessenger;
+        
+        G4Material *singleLayerMaterial	 = nullptr;
+        G4Material *coverlayMaterial	 = nullptr;
+        G4Material *metalMaterial	 = nullptr;
+        G4Material *glueMaterial	 = nullptr;
+        G4Material *dielectricMaterial	 = nullptr;
+        
+        G4double NofPCBLayersFromMessenger 		= 0.;
+        
+        std::vector<G4String> fGDMLReadStructure;
+        
+        
 };
 
 #endif

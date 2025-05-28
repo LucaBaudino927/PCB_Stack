@@ -46,11 +46,15 @@ private:
 	G4ParticleDefinition* fKaon = nullptr;
 	G4ParticleDefinition* fNeutron = nullptr;
 	G4ParticleDefinition* fProton = nullptr;
+	G4ParticleDefinition* fGeantino = nullptr;
 	G4double fMomentum = 10.*GeV;
-	G4double Y_BeamPosition = -7.4*mm;
+	G4double Y_BeamPosition = 0.*mm;
+	G4double X_BeamPosition = 0.*mm;
 	G4double fSigmaMomentum = 1.*MeV;
 	G4double fSigmaAngle = 1.*deg;
 	G4bool fRandomizePrimary = false;
+	G4bool fRandomizeBeamPosition = false;
+	G4double fScanWidth = 10.*mm;
     
 };
 

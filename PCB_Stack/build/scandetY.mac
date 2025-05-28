@@ -1,0 +1,4 @@
+/generator/beamYPosition {Y_BeamPosition}
+# For loop to change the beamXPosition from x = -4.4 mm to -7.4 mm with step of 1 mm
+# X_BeamPosition = -4.4 -5.4 -6.4 -7.4
+/control/loop scandetX.mac X_BeamPosition -4.4 -7.4 -1
