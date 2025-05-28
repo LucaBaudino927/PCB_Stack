@@ -588,8 +588,15 @@ CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o: \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4HCtable.hh \
+ /home/luca/geant4-v11.3.0-install/include/Geant4/G4LogicalVolumeStore.hh \
+ /home/luca/geant4-v11.3.0-install/include/Geant4/G4VStoreNotifier.hh \
+ /home/luca/geant4-v11.3.0-install/include/Geant4/G4VNotifier.hh \
  /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/Constants.hh \
  /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/StaticInfo.hh \
+ /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/MySteppingAction.hh \
+ /usr/include/c++/11/math.h \
+ /home/luca/geant4-v11.3.0-install/include/Geant4/G4UserSteppingAction.hh \
+ /home/luca/geant4-v11.3.0-install/include/Geant4/G4Step.hh \
  /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/MyPrimaryGenerator.hh \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4ParticleGun.hh \
@@ -608,8 +615,4 @@ CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o: \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4UImanager.hh \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4UIcommandStatus.hh \
  /home/luca/geant4-v11.3.0-install/include/Geant4/G4VStateDependent.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/icomsdefs.hh \
- /home/luca/geant4_workdir/PCB_Stack/PCB_Stack/include/MySteppingAction.hh \
- /usr/include/c++/11/math.h \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4UserSteppingAction.hh \
- /home/luca/geant4-v11.3.0-install/include/Geant4/G4Step.hh
+ /home/luca/geant4-v11.3.0-install/include/Geant4/icomsdefs.hh

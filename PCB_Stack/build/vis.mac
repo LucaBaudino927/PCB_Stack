@@ -2,20 +2,29 @@
 /control/saveHistory
 
 /detector/verboseDetConstruction false
-/detector/mapsFoil true
-/detector/constructAlpidePads false
-/detector/constructEpoxyGlueLayer true
-/detector/constructKaptonLayer true
-/detector/constructCopperLayer true
-/detector/constructSolderBalls false
-/detector/constructPCB true
-/detector/alpideXDimension 30. #mm
-/detector/alpideYDimension 15. #mm
-/detector/alpideThickness 50. #um
-/detector/alpidePadRadius 150. #um
-/detector/glueThickness 25. #um
-/detector/kaptonThickness 50. #um
-/detector/copperThickness 5. #um
+
+/detector/SingleLayer false
+/detector/LayerThickness 50 #um
+/detector/LayerMaterial G4_Si
+
+/detector/StackUp false
+/detector/NofLayers 2
+/detector/coverlayThickness 500 #um
+/detector/metalThickness 500 #um
+/detector/glueThickness 500 #um
+/detector/dielectricThickness 500 #um
+/detector/constructCoverlay true
+/detector/constructMetal true
+/detector/constructGlue true
+/detector/constructDielectric true
+/detector/coverlayMaterial G4_KAPTON
+/detector/metalMaterial G4_Al
+/detector/glueMaterial G4_Cu
+/detector/dielectricMaterial G4_KAPTON
+
+/detector/PCB true
+/detector/NofPCBLayers 2
+	
 
 /run/numberOfThreads 8
 /run/printProgress 0

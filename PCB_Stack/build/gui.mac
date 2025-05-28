@@ -20,16 +20,18 @@
 #
 # Generator menu :
 /gui/addMenu generator Generator
-/gui/addButton generator "randomizePrimary ON"	"/generator/randomizePrimary true"
-/gui/addButton generator "randomizePrimary OFF"	"/generator/randomizePrimary false"
-/gui/addButton generator "10 keV"  		"/generator/momentum 10 keV"
-/gui/addButton generator "10 MeV"  		"/generator/momentum 10 MeV"
-/gui/addButton generator "10 GeV"  		"/generator/momentum 10 GeV"
-/gui/addButton generator "e+"      		"/gun/particle e+"
-/gui/addButton generator "e-"	   		"/gun/particle e-"
-/gui/addButton generator "kaon+"   		"/gun/particle kaon+"
-/gui/addButton generator "neutron" 		"/gun/particle neutron"
-/gui/addButton generator "proton"  		"/gun/particle proton"
+/gui/addButton generator "randomizePrimary ON"		"/generator/randomizePrimary true"
+/gui/addButton generator "randomizePrimary OFF"		"/generator/randomizePrimary false"
+/gui/addButton generator "randomizeBeamPosition"  	"/generator/randomizeBeamPosition true"
+/gui/addButton generator "10 keV"  			"/generator/momentum 10 keV"
+/gui/addButton generator "10 MeV"  			"/generator/momentum 10 MeV"
+/gui/addButton generator "10 GeV"  			"/generator/momentum 10 GeV"
+/gui/addButton generator "e+"      			"/gun/particle e+"
+/gui/addButton generator "e-"	   			"/gun/particle e-"
+/gui/addButton generator "kaon+"   			"/gun/particle kaon+"
+/gui/addButton generator "neutron" 			"/gun/particle neutron"
+/gui/addButton generator "proton"  			"/gun/particle proton"
+/gui/addButton generator "geantino"  			"/gun/particle geantino"
 # Viewer menu :
 /gui/addMenu viewer Viewer
 /gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
