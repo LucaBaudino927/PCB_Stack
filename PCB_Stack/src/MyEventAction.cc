@@ -82,6 +82,7 @@ void MyEventAction::EndOfEventAction(const G4Event* anEvent){
 	analysisManager->AddNtupleRow(0);
 	
 	analysisManager->FillH2(0, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), sum);
+	analysisManager->FillH2(1, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), 1);
 
 
 	// print --------------------------------------------------------------------------------------------------------

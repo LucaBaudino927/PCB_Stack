@@ -80,6 +80,12 @@ void MyRunAction::BeginOfRunAction(const G4Run* run){
 	analysisManager->SetH2YAxisTitle(id, "Y [mm]");
 	analysisManager->SetH2ZAxisTitle(id, "X/X0");
 	
+	id = analysisManager->CreateH2("Number of Events XY", "Number of Events XY",  200, -5, 5, 200, -5, 5);
+	//analysisManager->SetH2Title(G4int id, const G4String& title);
+	analysisManager->SetH2XAxisTitle(id, "X [mm]");
+	analysisManager->SetH2YAxisTitle(id, "Y [mm]");
+	analysisManager->SetH2ZAxisTitle(id, "NofEvents");
+	
 	// Set ntuple output file
 	//analysisManager->SetNtupleFileName(0, "output"+strRunID.str()+".root");
 	//analysisManager->SetNtupleFileName(1, "output"+strRunID.str()+".root");

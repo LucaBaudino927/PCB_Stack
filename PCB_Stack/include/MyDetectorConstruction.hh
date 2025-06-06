@@ -87,7 +87,7 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         // G4GenericMessenger settings
         G4bool verboseDetConstr = false;
         //flags to declare the setup of the detector
-        G4bool constructMetal, constructGlue, constructDielectric, constructCoverlay, SingleLayer, StackUp, PCB;
+        G4bool constructMetal, constructGlue, constructDielectric, constructCoverlay, SingleLayer, StackUp, PCB, CustomPCB;
         //flags to tune the setup: if they are specified in the macro -> use those values otherwise use default values
         G4double NofLayersFromMessenger 		= 0.;
         G4double coverlayThicknessFromMessenger 	= 0.;
@@ -117,6 +117,11 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         G4Material *dielectricMaterial	 = nullptr;
         
         G4double NofPCBLayersFromMessenger 		= 0.;
+        G4double NofCustomPCBLayersFromMessenger	= 0.;
+        G4double AlpideThicknessFromMessenger		= 0.;
+        G4double AlThicknessFromMessenger		= 0.;
+        G4double KaptonThicknessFromMessenger		= 0.;
+        G4double GlueThicknessFromMessenger		= 0.;
         
         std::vector<G4String> fGDMLReadStructure;
         

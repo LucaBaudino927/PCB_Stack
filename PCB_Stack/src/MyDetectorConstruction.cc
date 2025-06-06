@@ -33,6 +33,14 @@ MyDetectorConstruction::MyDetectorConstruction(std::vector<G4String> GDMLReadStr
 	fMessenger->DeclareProperty("PCB",	  		PCB, 					"PCB simulation");
 	fMessenger->DeclareProperty("NofPCBLayers",  		NofPCBLayersFromMessenger, 		"The number of PCB layers");
 
+	//configurazione per la simulazione della PCB custom
+	fMessenger->DeclareProperty("CustomPCB",			CustomPCB,	 		"Custom PCB simulation");
+	fMessenger->DeclareProperty("NofCustomPCBLayers",  		NofCustomPCBLayersFromMessenger,"The number of PCB layers");
+	fMessenger->DeclarePropertyWithUnit("AlpideThickness",  "um", 	AlpideThicknessFromMessenger, 	"Alpide Thickness");
+	fMessenger->DeclarePropertyWithUnit("AlThickness",  	"um", 	AlThicknessFromMessenger, 	"Aluminium Thickness");
+	fMessenger->DeclarePropertyWithUnit("KaptonThickness",  "um", 	KaptonThicknessFromMessenger, 	"Kapton Thickness");
+	fMessenger->DeclarePropertyWithUnit("GlueThickness",  	"um", 	GlueThicknessFromMessenger, 	"Glue Thickness");
+
         // ######## World dimension definition
 	xWorld = 10.*cm;
 	yWorld = 10.*cm;
@@ -181,7 +189,20 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct(){
 			// Rotation of the assembly inside the world
 			G4RotationMatrix Rm;
 			// Translation of the assembly inside the world
-			G4double offset = 0.5*cm;
+			G4double offset = 0.1*cm;
+			G4ThreeVector Tm(0., 0., 0. + i*offset);
+			G4Transform3D Tr = G4Transform3D(Rm,Tm);
+			assemblyDetector->MakeImprint(logicWorld, Tr);
+		}
+	} else if(CustomPCB){
+		ConstructCustomPCB(assemblyDetector);
+		// Inserisco l'assembly nel world logical volume
+		G4int NofPCBStack = NofCustomPCBLayersFromMessenger > 0 ? NofCustomPCBLayersFromMessenger : 1;
+		for(unsigned int i = 0; i < NofPCBStack; i++) {
+			// Rotation of the assembly inside the world
+			G4RotationMatrix Rm;
+			// Translation of the assembly inside the world
+			G4double offset = 0.1*cm;
 			G4ThreeVector Tm(0., 0., 0. + i*offset);
 			G4Transform3D Tr = G4Transform3D(Rm,Tm);
 			assemblyDetector->MakeImprint(logicWorld, Tr);
@@ -355,6 +376,151 @@ void MyDetectorConstruction::ConstructPCB(G4AssemblyVolume* assemblyDetector)
 	//fPCBMiddleLayerLV->SetVisAttributes(red);
 	//fPCBLowerLayerLV->SetVisAttributes(green);
 }
+
+void MyDetectorConstruction::ConstructCustomPCB(G4AssemblyVolume* assemblyDetector)
+{
+	G4AssemblyStore* assemblyStore = G4AssemblyStore::GetInstance();
+	/*
+	for(assemblyIterator i = assemblyStore->begin(); i != assemblyStore->end(); i++){
+		G4cout<<"---ConstructPCB---GetAssemblyID(): "<<std::to_string((*i)->GetAssemblyID())<<G4endl;
+	}
+	*/
+	
+	G4GDMLParser parser;
+	// Uncomment the following if wish to avoid names stripping
+	// parser.SetStripFlag(false);
+	// Uncomment the following and set a string with proper absolute path and
+	// schema filename if wishing to use alternative schema for parsing validation
+	// parser.SetImportSchema("");
+	parser.SetOverlapCheck(true);
+	
+	G4RotationMatrix Ra;
+	Ra.rotateZ(270*deg); // Ruota attorno a Z -> Ruota piano XY
+	G4ThreeVector Ta;
+	G4Transform3D Tr;
+	
+	G4double Z = 0.*um;
+	G4double layerThickness = 1.*um;
+	G4double alpideThickness = (AlpideThicknessFromMessenger != 0.) ? AlpideThicknessFromMessenger : 50.*um;
+	G4double AlThickness 	 = (AlThicknessFromMessenger != 0.)     ? AlThicknessFromMessenger     : 20.;
+	G4double KaptonThickness = (KaptonThicknessFromMessenger != 0.) ? KaptonThicknessFromMessenger : 25.;
+	G4double GlueThickness 	 = (GlueThicknessFromMessenger != 0.)   ? GlueThicknessFromMessenger   : 20.;
+	
+	//Parsing of PCB_LowerLayer--------------------------------------------------------------------------
+	if(verboseDetConstr) G4cout << "Parsing of PCB_LowerLayer" << G4endl;
+	parser.Read(fGDMLReadStructure[2]);
+	G4AssemblyVolume* assemblyPCBLowerLayer_kapton 	  = assemblyStore->GetAssembly(X); //AssemblyID = 4
+	G4AssemblyVolume* assemblyPCBLowerLayer_aluminium = assemblyStore->GetAssembly(Y); //AssemblyID = 4
+	for(G4int i = 0; i < KaptonThickness; i++){
+		Z += layerThickness/2.;
+		Ta.setX(0.*mm); 
+		Ta.setY(0.*mm);
+		Ta.setZ(Z);//Ta.setZ(13.8*mm);
+		Tr = G4Transform3D(Ra,Ta);	
+		assemblyDetector->AddPlacedAssembly(assemblyPCBLowerLayer_kapton, Tr);
+		Z += layerThickness/2.;
+	}
+	for(G4int i = 0; i < AlThickness; i++){
+		Z += layerThickness/2.;
+		Ta.setX(0.*mm); 
+		Ta.setY(0.*mm);
+		Ta.setZ(Z);//Ta.setZ(13.8*mm);
+		Tr = G4Transform3D(Ra,Ta);	
+		assemblyDetector->AddPlacedAssembly(assemblyPCBLowerLayer_aluminium, Tr);
+		Z += layerThickness/2.;
+	}
+	if(verboseDetConstr) G4cout << "End of PCB_LowerLayer parsing" << G4endl;
+	parser.Clear();
+
+	
+	//Parsing of PCB_MiddleLayer-------------------------------------------------------------------------
+	if(verboseDetConstr) G4cout << "Parsing of PCB_MiddleLayer" << G4endl;
+	parser.Read(fGDMLReadStructure[1]);
+	G4AssemblyVolume* assemblyPCBMiddleLayer_kapton    = assemblyStore->GetAssembly(X); //AssemblyID = 3
+	G4AssemblyVolume* assemblyPCBMiddleLayer_aluminium = assemblyStore->GetAssembly(Y); //AssemblyID = 3
+	for(G4int i = 0; i < KaptonThickness; i++){
+		Z += layerThickness/2.;
+		Ta.setX(0.*mm); 
+		Ta.setY(0.*mm);
+		Ta.setZ(Z);//Ta.setZ(-20.8*mm);
+		Tr = G4Transform3D(Ra,Ta);	
+		assemblyDetector->AddPlacedAssembly(assemblyPCBMiddleLayer_kapton, Tr);
+		Z += layerThickness/2.;
+	}
+	for(G4int i = 0; i < AlThickness; i++){
+		Z += layerThickness/2.;
+		Ta.setX(0.*mm); 
+		Ta.setY(0.*mm);
+		Ta.setZ(Z);//Ta.setZ(-20.8*mm);
+		Tr = G4Transform3D(Ra,Ta);	
+		assemblyDetector->AddPlacedAssembly(assemblyPCBMiddleLayer_aluminium, Tr);
+		Z += layerThickness/2.;
+	}
+	if(verboseDetConstr) G4cout << "End of PCB_MiddleLayer parsing" << G4endl;
+	parser.Clear();
+
+	
+	//Alpide---------------------------------------------------------------------------------------------
+	if(verboseDetConstr) G4cout << "Building Alpide" << G4endl;
+	Z += alpideThickness/2.;
+	G4Box* SV = new G4Box("SV_Alpide", 1.5*cm, 0.75*cm, alpideThickness);
+	fLogicVolumeList.push_back(new G4LogicalVolume(SV, material, "LV_Alpide"));
+
+	// Fill the assembly by the plates
+	Ta.setX(0.*um); 
+	Ta.setY(0.*um);
+	Ta.setZ(Z);
+	Tr = G4Transform3D(Ra,Ta);
+	assemblyDetector->AddPlacedVolume(fLogicVolumeList.back(), Tr);
+	Z += alpideThickness/2.;
+	if(verboseDetConstr) G4cout << "End of Alpide building" << G4endl;
+	
+	//Parsing of PCB_UpperLayer--------------------------------------------------------------------------
+	if(verboseDetConstr) G4cout << "Parsing of PCB_UpperLayer" << G4endl;
+	Z += 1.*um;
+	parser.Read(fGDMLReadStructure[0]);
+	G4AssemblyVolume* assemblyPCBUpperLayer_kapton    = assemblyStore->GetAssembly(X); //AssemblyID = 2
+	G4AssemblyVolume* assemblyPCBUpperLayer_aluminium = assemblyStore->GetAssembly(Y); //AssemblyID = 2
+	for(G4int i = 0; i < KaptonThickness; i++){
+		Z += layerThickness/2.;
+		Ta.setX(0.*mm); 
+		Ta.setY(0.*mm);
+		Ta.setZ(Z);//Ta.setZ(0.2*mm);
+		Tr = G4Transform3D(Ra,Ta);	
+		assemblyDetector->AddPlacedAssembly(assemblyPCBUpperLayer_kapton, Tr);
+		Z += layerThickness/2.;
+	}
+	for(G4int i = 0; i < AlThickness; i++){
+		Z += layerThickness/2.;
+		Ta.setX(0.*mm); 
+		Ta.setY(0.*mm);
+		Ta.setZ(Z);//Ta.setZ(0.2*mm);
+		Tr = G4Transform3D(Ra,Ta);	
+		assemblyDetector->AddPlacedAssembly(assemblyPCBUpperLayer_aluminium, Tr);
+		Z += layerThickness/2.;
+	}
+	if(verboseDetConstr) G4cout << "End of PCB_UpperLayer parsing" << G4endl;
+	parser.Clear();
+	
+	
+	// visualization attributes ------------------------------------------------
+
+	G4VisAttributes invisible(G4VisAttributes::GetInvisible());
+	G4VisAttributes invisibleBlue(false, G4Colour::Blue());
+	G4VisAttributes invisibleGreen(false, G4Colour::Green());
+	G4VisAttributes invisibleYellow(false, G4Colour::Yellow());
+	G4VisAttributes blue(G4Colour::Blue());
+	G4VisAttributes cgray(G4Colour::Gray());
+	G4VisAttributes green(G4Colour::Green());
+	G4VisAttributes red(G4Colour::Red());
+	G4VisAttributes yellow(G4Colour::Yellow());
+	G4VisAttributes brown(G4Colour::Brown());
+
+	//fPCBUpperLayerLV->SetVisAttributes(yellow);
+	//fPCBMiddleLayerLV->SetVisAttributes(red);
+	//fPCBLowerLayerLV->SetVisAttributes(green);
+}
+
 
 // ######## Construction of Sensitive Detector 
 void MyDetectorConstruction::ConstructSDandField(){

@@ -23,7 +23,7 @@
 /detector/dielectricMaterial G4_KAPTON
 
 /detector/PCB true
-/detector/NofPCBLayers 2
+/detector/NofPCBLayers 10
 	
 
 /run/numberOfThreads 8
