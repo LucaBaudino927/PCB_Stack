@@ -126,7 +126,7 @@ void MyPrimaryGenerator::DefineCommands()
 	auto& beamYPositionCmd = fMessenger->DeclarePropertyWithUnit("beamYPosition", "mm", Y_BeamPosition, "Y coordinate of the beam in mm");
 	beamYPositionCmd.SetParameterName("Ybp", true);
 	//beamYPositionCmd.SetRange("Ybp>=0.");
-	beamYPositionCmd.SetDefaultValue("-3.4");
+	beamYPositionCmd.SetDefaultValue("0");
 	
 	// beamXPosition command
 	auto& beamXPositionCmd = fMessenger->DeclarePropertyWithUnit("beamXPosition", "mm", X_BeamPosition, "X coordinate of the beam in mm");
@@ -142,7 +142,7 @@ void MyPrimaryGenerator::DefineCommands()
 	// scanWidth command
 	auto& scanWidthCmd = fMessenger->DeclarePropertyWithUnit("scanWidth", "mm", fScanWidth, "Width of the possible beam positions.");
 	scanWidthCmd.SetParameterName("scanW", true);
-	//scanWidthCmd.SetRange("scanW>=0.");
+	scanWidthCmd.SetRange("scanW>=0.");
 	scanWidthCmd.SetDefaultValue("10");
   
 }
