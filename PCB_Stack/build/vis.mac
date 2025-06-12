@@ -1,7 +1,7 @@
 /control/verbose 0
 /control/saveHistory
 
-/detector/verboseDetConstruction false
+/detector/verboseDetConstruction true
 
 /detector/SingleLayer false
 /detector/LayerThickness 50 #um
@@ -22,8 +22,11 @@
 /detector/glueMaterial G4_Cu
 /detector/dielectricMaterial G4_KAPTON
 
-/detector/PCB true
+/detector/PCB false
 /detector/NofPCBLayers 10
+
+/detector/CustomPCB true
+/detector/NofPCBLayers 1
 	
 
 /run/numberOfThreads 8

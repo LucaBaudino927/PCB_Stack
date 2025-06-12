@@ -1,4 +1,4 @@
-/detector/verboseDetConstruction false
+/detector/verboseDetConstruction true
 /detector/SingleLayer false
 /detector/LayerThickness 50
 /detector/LayerMaterial G4_Si
@@ -16,8 +16,10 @@
 /detector/metalMaterial G4_Al
 /detector/glueMaterial G4_Cu
 /detector/dielectricMaterial G4_KAPTON
-/detector/PCB true
+/detector/PCB false
 /detector/NofPCBLayers 10
+/detector/CustomPCB true
+/detector/NofPCBLayers 1
 /run/numberOfThreads 8
 /run/printProgress 0
 /run/verbose 1
@@ -78,5 +80,4 @@
 /gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
 /gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
 /gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
-/generator/randomizeBeamPosition true
-/gun/particle geantino
+/vis/viewer/set/picking false
