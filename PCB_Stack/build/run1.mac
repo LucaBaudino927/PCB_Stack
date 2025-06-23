@@ -11,37 +11,22 @@
 #	add new geometries here
 #
 /detector/verboseDetConstruction false
-/detector/mapsFoil true
-
-#
-# Defaults:
-#
-#	add new geometries here
-#
-/detector/constructAlpidePads true
-/detector/constructEpoxyGlueLayer true
-/detector/constructKaptonLayer true
-/detector/constructCopperLayer true
-/detector/constructSolderBalls true
-/detector/constructPCB true
-/detector/alpideXDimension 30. #mm
-/detector/alpideYDimension 15. #mm
-/detector/alpideThickness 50. #um
-/detector/alpidePadRadius 150. #um
-/detector/glueThickness 25. #um
-/detector/kaptonThickness 50. #um
-/detector/copperThickness 5. #um
 
 # Initialize kernel
-/run/reinitializeGeometry
-/run/geometryModified
-/run/initialize
+#/run/reinitializeGeometry
+#/run/geometryModified
+#/run/initialize
 
 #
 # Defaults:
 #
 #	add new settings here
-#
+
+/myRun/beamXPosition 0 mm
+/myRun/beamYPosition -5 mm
+/myRun/scanWidth 20 mm
+/generator/randomizeBeamPosition true
+/gun/particle geantino
 
 /vis/drawVolume
 

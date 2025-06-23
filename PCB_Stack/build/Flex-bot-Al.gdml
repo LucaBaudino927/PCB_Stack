@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+  <define>
+    <position name="SOLID0241_0_bot_Al" unit="mm" x="47.47269058227539" y="-6.4079179763793945" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_1_bot_Al" unit="mm" x="44.65169143676758" y="-6.4079179763793945" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_2_bot_Al" unit="mm" x="47.47269058227539" y="-6.4079179763793945" z="0.0005000000237487257"/>
+    <position name="SOLID0241_3_bot_Al" unit="mm" x="44.65169143676758" y="-6.4079179763793945" z="0.0005000000237487257"/>
+    <position name="SOLID0241_4_bot_Al" unit="mm" x="43.98868942260742" y="-7.070918083190918" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_5_bot_Al" unit="mm" x="43.98868942260742" y="-7.070918083190918" z="0.0005000000237487257"/>
+    <position name="SOLID0241_6_bot_Al" unit="mm" x="43.96969223022461" y="-7.086917877197266" z="0.0005000000237487257"/>
+    <position name="SOLID0241_7_bot_Al" unit="mm" x="43.96969223022461" y="-7.086917877197266" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_8_bot_Al" unit="mm" x="43.94769287109375" y="-7.0989179611206055" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_9_bot_Al" unit="mm" x="43.94769287109375" y="-7.0989179611206055" z="0.0005000000237487257"/>
+    <position name="SOLID0241_10_bot_Al" unit="mm" x="43.92369079589844" y="-7.105917930603027" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_11_bot_Al" unit="mm" x="43.92369079589844" y="-7.105917930603027" z="0.0005000000237487257"/>
+    <position name="SOLID0241_12_bot_Al" unit="mm" x="43.89868927001953" y="-7.107917785644531" z="0.0005000000237487257"/>
+    <position name="SOLID0241_13_bot_Al" unit="mm" x="43.89868927001953" y="-7.107917785644531" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_14_bot_Al" unit="mm" x="19.79969024658203" y="-7.107917785644531" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_15_bot_Al" unit="mm" x="19.79969024658203" y="-7.107917785644531" z="0.0005000000237487257"/>
+    <position name="SOLID0241_16_bot_Al" unit="mm" x="19.774690628051758" y="-7.105917930603027" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_17_bot_Al" unit="mm" x="19.774690628051758" y="-7.105917930603027" z="0.0005000000237487257"/>
+    <position name="SOLID0241_18_bot_Al" unit="mm" x="19.750690460205078" y="-7.0989179611206055" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_19_bot_Al" unit="mm" x="19.750690460205078" y="-7.0989179611206055" z="0.0005000000237487257"/>
+    <position name="SOLID0241_20_bot_Al" unit="mm" x="19.72869110107422" y="-7.086917877197266" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_21_bot_Al" unit="mm" x="19.72869110107422" y="-7.086917877197266" z="0.0005000000237487257"/>
+    <position name="SOLID0241_22_bot_Al" unit="mm" x="19.70969009399414" y="-7.070918083190918" z="0.0005000000237487257"/>
+    <position name="SOLID0241_23_bot_Al" unit="mm" x="19.70969009399414" y="-7.070918083190918" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_24_bot_Al" unit="mm" x="18.409690856933594" y="-5.770917892456055" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_25_bot_Al" unit="mm" x="18.409690856933594" y="-5.770917892456055" z="0.0005000000237487257"/>
+    <position name="SOLID0241_26_bot_Al" unit="mm" x="18.39369010925293" y="-5.751917839050293" z="0.0005000000237487257"/>
+    <position name="SOLID0241_27_bot_Al" unit="mm" x="18.39369010925293" y="-5.751917839050293" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_28_bot_Al" unit="mm" x="18.381690979003906" y="-5.729918003082275" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_29_bot_Al" unit="mm" x="18.381690979003906" y="-5.729918003082275" z="0.0005000000237487257"/>
+    <position name="SOLID0241_30_bot_Al" unit="mm" x="18.374691009521484" y="-5.705917835235596" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_31_bot_Al" unit="mm" x="18.374691009521484" y="-5.705917835235596" z="0.0005000000237487257"/>
+    <position name="SOLID0241_32_bot_Al" unit="mm" x="18.372690200805664" y="-5.680918216705322" z="0.0005000000237487257"/>
+    <position name="SOLID0241_33_bot_Al" unit="mm" x="18.372690200805664" y="-5.680918216705322" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_34_bot_Al" unit="mm" x="18.372690200805664" y="10.866082191467285" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_35_bot_Al" unit="mm" x="18.372690200805664" y="10.866082191467285" z="0.0005000000237487257"/>
+    <position name="SOLID0241_36_bot_Al" unit="mm" x="16.346691131591797" y="12.892082214355469" z="0.0005000000237487257"/>
+    <position name="SOLID0241_37_bot_Al" unit="mm" x="16.346691131591797" y="12.892082214355469" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_38_bot_Al" unit="mm" x="9.151691436767578" y="12.892082214355469" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_39_bot_Al" unit="mm" x="9.151691436767578" y="12.892082214355469" z="0.0005000000237487257"/>
+    <position name="SOLID0241_40_bot_Al" unit="mm" x="6.9886908531188965" y="10.729082107543945" z="0.0005000000237487257"/>
+    <position name="SOLID0241_41_bot_Al" unit="mm" x="6.9886908531188965" y="10.729082107543945" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_42_bot_Al" unit="mm" x="6.969690799713135" y="10.713082313537598" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_43_bot_Al" unit="mm" x="6.969690799713135" y="10.713082313537598" z="0.0005000000237487257"/>
+    <position name="SOLID0241_44_bot_Al" unit="mm" x="6.947690963745117" y="10.701082229614258" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_45_bot_Al" unit="mm" x="6.947690963745117" y="10.701082229614258" z="0.0005000000237487257"/>
+    <position name="SOLID0241_46_bot_Al" unit="mm" x="6.9236907958984375" y="10.694082260131836" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_47_bot_Al" unit="mm" x="6.9236907958984375" y="10.694082260131836" z="0.0005000000237487257"/>
+    <position name="SOLID0241_48_bot_Al" unit="mm" x="6.899691104888916" y="10.692082405090332" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_49_bot_Al" unit="mm" x="6.899691104888916" y="10.692082405090332" z="0.0005000000237487257"/>
+    <position name="SOLID0241_50_bot_Al" unit="mm" x="5.799691200256348" y="10.692082405090332" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_51_bot_Al" unit="mm" x="5.799691200256348" y="10.692082405090332" z="0.0005000000237487257"/>
+    <position name="SOLID0241_52_bot_Al" unit="mm" x="5.774691104888916" y="10.694082260131836" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_53_bot_Al" unit="mm" x="5.774691104888916" y="10.694082260131836" z="0.0005000000237487257"/>
+    <position name="SOLID0241_54_bot_Al" unit="mm" x="5.750690937042236" y="10.701082229614258" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_55_bot_Al" unit="mm" x="5.750690937042236" y="10.701082229614258" z="0.0005000000237487257"/>
+    <position name="SOLID0241_56_bot_Al" unit="mm" x="5.728691101074219" y="10.713082313537598" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_57_bot_Al" unit="mm" x="5.728691101074219" y="10.713082313537598" z="0.0005000000237487257"/>
+    <position name="SOLID0241_58_bot_Al" unit="mm" x="5.709691047668457" y="10.729082107543945" z="0.0005000000237487257"/>
+    <position name="SOLID0241_59_bot_Al" unit="mm" x="5.709691047668457" y="10.729082107543945" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_60_bot_Al" unit="mm" x="4.046690940856934" y="12.392082214355469" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_61_bot_Al" unit="mm" x="4.046690940856934" y="12.392082214355469" z="0.0005000000237487257"/>
+    <position name="SOLID0241_62_bot_Al" unit="mm" x="3.02669095993042" y="12.392082214355469" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_63_bot_Al" unit="mm" x="3.02669095993042" y="12.392082214355469" z="0.0005000000237487257"/>
+    <position name="SOLID0241_64_bot_Al" unit="mm" x="3.02669095993042" y="-13.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_65_bot_Al" unit="mm" x="3.02669095993042" y="-13.05391788482666" z="0.0005000000237487257"/>
+    <position name="SOLID0241_66_bot_Al" unit="mm" x="5.946691036224365" y="-13.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_67_bot_Al" unit="mm" x="5.946691036224365" y="-13.05391788482666" z="0.0005000000237487257"/>
+    <position name="SOLID0241_68_bot_Al" unit="mm" x="6.909690856933594" y="-12.091917991638184" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_69_bot_Al" unit="mm" x="6.909690856933594" y="-12.091917991638184" z="0.0005000000237487257"/>
+    <position name="SOLID0241_70_bot_Al" unit="mm" x="6.9286909103393555" y="-12.075918197631836" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_71_bot_Al" unit="mm" x="6.9286909103393555" y="-12.075918197631836" z="0.0005000000237487257"/>
+    <position name="SOLID0241_72_bot_Al" unit="mm" x="6.950691223144531" y="-12.063918113708496" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_73_bot_Al" unit="mm" x="6.950691223144531" y="-12.063918113708496" z="0.0005000000237487257"/>
+    <position name="SOLID0241_74_bot_Al" unit="mm" x="6.974690914154053" y="-12.056918144226074" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_75_bot_Al" unit="mm" x="6.974690914154053" y="-12.056918144226074" z="0.0005000000237487257"/>
+    <position name="SOLID0241_76_bot_Al" unit="mm" x="6.999691009521484" y="-12.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_77_bot_Al" unit="mm" x="6.999691009521484" y="-12.05391788482666" z="0.0005000000237487257"/>
+    <position name="SOLID0241_78_bot_Al" unit="mm" x="10.772689819335938" y="-12.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_79_bot_Al" unit="mm" x="10.772689819335938" y="-12.05391788482666" z="0.0005000000237487257"/>
+    <position name="SOLID0241_80_bot_Al" unit="mm" x="10.772689819335938" y="7.819081783294678" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_81_bot_Al" unit="mm" x="10.772689819335938" y="7.819081783294678" z="0.0005000000237487257"/>
+    <position name="SOLID0241_82_bot_Al" unit="mm" x="10.774689674377441" y="7.843081951141357" z="0.0005000000237487257"/>
+    <position name="SOLID0241_83_bot_Al" unit="mm" x="10.774689674377441" y="7.843081951141357" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_84_bot_Al" unit="mm" x="10.78169059753418" y="7.867082118988037" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_85_bot_Al" unit="mm" x="10.78169059753418" y="7.867082118988037" z="0.0005000000237487257"/>
+    <position name="SOLID0241_86_bot_Al" unit="mm" x="10.79369068145752" y="7.889081954956055" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_87_bot_Al" unit="mm" x="10.79369068145752" y="7.889081954956055" z="0.0005000000237487257"/>
+    <position name="SOLID0241_88_bot_Al" unit="mm" x="10.809691429138184" y="7.908082008361816" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_89_bot_Al" unit="mm" x="10.809691429138184" y="7.908082008361816" z="0.0005000000237487257"/>
+    <position name="SOLID0241_90_bot_Al" unit="mm" x="10.828690528869629" y="7.924081802368164" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_91_bot_Al" unit="mm" x="10.828690528869629" y="7.924081802368164" z="0.0005000000237487257"/>
+    <position name="SOLID0241_92_bot_Al" unit="mm" x="10.850690841674805" y="7.936081886291504" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_93_bot_Al" unit="mm" x="10.850690841674805" y="7.936081886291504" z="0.0005000000237487257"/>
+    <position name="SOLID0241_94_bot_Al" unit="mm" x="10.874691009521484" y="7.943081855773926" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_95_bot_Al" unit="mm" x="10.874691009521484" y="7.943081855773926" z="0.0005000000237487257"/>
+    <position name="SOLID0241_96_bot_Al" unit="mm" x="10.899690628051758" y="7.94608211517334" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_97_bot_Al" unit="mm" x="10.899690628051758" y="7.94608211517334" z="0.0005000000237487257"/>
+    <position name="SOLID0241_98_bot_Al" unit="mm" x="13.299691200256348" y="7.94608211517334" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_99_bot_Al" unit="mm" x="13.299691200256348" y="7.94608211517334" z="0.0005000000237487257"/>
+    <position name="SOLID0241_100_bot_Al" unit="mm" x="13.323691368103027" y="7.943081855773926" z="0.0005000000237487257"/>
+    <position name="SOLID0241_101_bot_Al" unit="mm" x="13.323691368103027" y="7.943081855773926" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_102_bot_Al" unit="mm" x="13.34769058227539" y="7.936081886291504" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_103_bot_Al" unit="mm" x="13.34769058227539" y="7.936081886291504" z="0.0005000000237487257"/>
+    <position name="SOLID0241_104_bot_Al" unit="mm" x="13.369690895080566" y="7.924081802368164" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_105_bot_Al" unit="mm" x="13.369690895080566" y="7.924081802368164" z="0.0005000000237487257"/>
+    <position name="SOLID0241_106_bot_Al" unit="mm" x="13.388690948486328" y="7.908082008361816" z="0.0005000000237487257"/>
+    <position name="SOLID0241_107_bot_Al" unit="mm" x="13.388690948486328" y="7.908082008361816" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_108_bot_Al" unit="mm" x="13.404690742492676" y="7.889081954956055" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_109_bot_Al" unit="mm" x="13.404690742492676" y="7.889081954956055" z="0.0005000000237487257"/>
+    <position name="SOLID0241_110_bot_Al" unit="mm" x="13.416690826416016" y="7.867082118988037" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_111_bot_Al" unit="mm" x="13.416690826416016" y="7.867082118988037" z="0.0005000000237487257"/>
+    <position name="SOLID0241_112_bot_Al" unit="mm" x="13.423690795898438" y="7.843081951141357" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_113_bot_Al" unit="mm" x="13.423690795898438" y="7.843081951141357" z="0.0005000000237487257"/>
+    <position name="SOLID0241_114_bot_Al" unit="mm" x="13.426691055297852" y="7.819081783294678" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_115_bot_Al" unit="mm" x="13.426691055297852" y="7.819081783294678" z="0.0005000000237487257"/>
+    <position name="SOLID0241_116_bot_Al" unit="mm" x="13.426691055297852" y="-12.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_117_bot_Al" unit="mm" x="13.426691055297852" y="-12.05391788482666" z="0.0005000000237487257"/>
+    <position name="SOLID0241_118_bot_Al" unit="mm" x="47.47269058227539" y="-12.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0241_119_bot_Al" unit="mm" x="47.47269058227539" y="-12.05391788482666" z="0.0005000000237487257"/>
+    <position name="center" x="0" y="0" z="0" unit="mm"/>
+    <rotation name="identity" x="0" y="0" z="0"/>
+    <position name="SOLID0251_0_bot_Al" unit="mm" x="47.47269058227539" y="-4.707918167114258" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_1_bot_Al" unit="mm" x="20.899690628051758" y="-4.707918167114258" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_2_bot_Al" unit="mm" x="47.47269058227539" y="-4.707918167114258" z="0.0005000000237487257"/>
+    <position name="SOLID0251_3_bot_Al" unit="mm" x="20.899690628051758" y="-4.707918167114258" z="0.0005000000237487257"/>
+    <position name="SOLID0251_4_bot_Al" unit="mm" x="20.874691009521484" y="-4.705917835235596" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_5_bot_Al" unit="mm" x="20.874691009521484" y="-4.705917835235596" z="0.0005000000237487257"/>
+    <position name="SOLID0251_6_bot_Al" unit="mm" x="20.850690841674805" y="-4.698917865753174" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_7_bot_Al" unit="mm" x="20.850690841674805" y="-4.698917865753174" z="0.0005000000237487257"/>
+    <position name="SOLID0251_8_bot_Al" unit="mm" x="20.828691482543945" y="-4.686917781829834" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_9_bot_Al" unit="mm" x="20.828691482543945" y="-4.686917781829834" z="0.0005000000237487257"/>
+    <position name="SOLID0251_10_bot_Al" unit="mm" x="20.809690475463867" y="-4.670917987823486" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_11_bot_Al" unit="mm" x="20.809690475463867" y="-4.670917987823486" z="0.0005000000237487257"/>
+    <position name="SOLID0251_12_bot_Al" unit="mm" x="20.793691635131836" y="-4.651917934417725" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_13_bot_Al" unit="mm" x="20.793691635131836" y="-4.651917934417725" z="0.0005000000237487257"/>
+    <position name="SOLID0251_14_bot_Al" unit="mm" x="20.78169059753418" y="-4.629918098449707" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_15_bot_Al" unit="mm" x="20.78169059753418" y="-4.629918098449707" z="0.0005000000237487257"/>
+    <position name="SOLID0251_16_bot_Al" unit="mm" x="20.774690628051758" y="-4.605917930603027" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_17_bot_Al" unit="mm" x="20.774690628051758" y="-4.605917930603027" z="0.0005000000237487257"/>
+    <position name="SOLID0251_18_bot_Al" unit="mm" x="20.77269172668457" y="-4.580917835235596" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_19_bot_Al" unit="mm" x="20.77269172668457" y="-4.580917835235596" z="0.0005000000237487257"/>
+    <position name="SOLID0251_20_bot_Al" unit="mm" x="20.77269172668457" y="15.292081832885742" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_21_bot_Al" unit="mm" x="20.77269172668457" y="15.292081832885742" z="0.0005000000237487257"/>
+    <position name="SOLID0251_22_bot_Al" unit="mm" x="6.999691009521484" y="15.292081832885742" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_23_bot_Al" unit="mm" x="6.999691009521484" y="15.292081832885742" z="0.0005000000237487257"/>
+    <position name="SOLID0251_24_bot_Al" unit="mm" x="6.974690914154053" y="15.294081687927246" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_25_bot_Al" unit="mm" x="6.974690914154053" y="15.294081687927246" z="0.0005000000237487257"/>
+    <position name="SOLID0251_26_bot_Al" unit="mm" x="6.950691223144531" y="15.301081657409668" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_27_bot_Al" unit="mm" x="6.950691223144531" y="15.301081657409668" z="0.0005000000237487257"/>
+    <position name="SOLID0251_28_bot_Al" unit="mm" x="6.9286909103393555" y="15.313081741333008" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_29_bot_Al" unit="mm" x="6.9286909103393555" y="15.313081741333008" z="0.0005000000237487257"/>
+    <position name="SOLID0251_30_bot_Al" unit="mm" x="6.909690856933594" y="15.329081535339355" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_31_bot_Al" unit="mm" x="6.909690856933594" y="15.329081535339355" z="0.0005000000237487257"/>
+    <position name="SOLID0251_32_bot_Al" unit="mm" x="5.946691036224365" y="16.292081832885742" z="0.0005000000237487257"/>
+    <position name="SOLID0251_33_bot_Al" unit="mm" x="5.946691036224365" y="16.292081832885742" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_34_bot_Al" unit="mm" x="1.4266910552978516" y="16.292081832885742" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_35_bot_Al" unit="mm" x="1.4266910552978516" y="16.292081832885742" z="0.0005000000237487257"/>
+    <position name="SOLID0251_36_bot_Al" unit="mm" x="1.4266910552978516" y="-13.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_37_bot_Al" unit="mm" x="1.4266910552978516" y="-13.05391788482666" z="0.0005000000237487257"/>
+    <position name="SOLID0251_38_bot_Al" unit="mm" x="2.572690963745117" y="-13.05391788482666" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_39_bot_Al" unit="mm" x="2.572690963745117" y="-13.05391788482666" z="0.0005000000237487257"/>
+    <position name="SOLID0251_40_bot_Al" unit="mm" x="2.572690963745117" y="12.71908187866211" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_41_bot_Al" unit="mm" x="2.572690963745117" y="12.71908187866211" z="0.0005000000237487257"/>
+    <position name="SOLID0251_42_bot_Al" unit="mm" x="2.5746910572052" y="12.743082046508789" z="0.0005000000237487257"/>
+    <position name="SOLID0251_43_bot_Al" unit="mm" x="2.5746910572052" y="12.743082046508789" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_44_bot_Al" unit="mm" x="2.581691026687622" y="12.767082214355469" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_45_bot_Al" unit="mm" x="2.581691026687622" y="12.767082214355469" z="0.0005000000237487257"/>
+    <position name="SOLID0251_46_bot_Al" unit="mm" x="2.593691110610962" y="12.789081573486328" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_47_bot_Al" unit="mm" x="2.593691110610962" y="12.789081573486328" z="0.0005000000237487257"/>
+    <position name="SOLID0251_48_bot_Al" unit="mm" x="2.6096909046173096" y="12.80808162689209" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_49_bot_Al" unit="mm" x="2.6096909046173096" y="12.80808162689209" z="0.0005000000237487257"/>
+    <position name="SOLID0251_50_bot_Al" unit="mm" x="2.6286909580230713" y="12.824082374572754" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_51_bot_Al" unit="mm" x="2.6286909580230713" y="12.824082374572754" z="0.0005000000237487257"/>
+    <position name="SOLID0251_52_bot_Al" unit="mm" x="2.650691032409668" y="12.836082458496094" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_53_bot_Al" unit="mm" x="2.650691032409668" y="12.836082458496094" z="0.0005000000237487257"/>
+    <position name="SOLID0251_54_bot_Al" unit="mm" x="2.6746909618377686" y="12.843082427978516" z="0.0005000000237487257"/>
+    <position name="SOLID0251_55_bot_Al" unit="mm" x="2.6746909618377686" y="12.843082427978516" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_56_bot_Al" unit="mm" x="2.6996910572052" y="12.846081733703613" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_57_bot_Al" unit="mm" x="2.6996910572052" y="12.846081733703613" z="0.0005000000237487257"/>
+    <position name="SOLID0251_58_bot_Al" unit="mm" x="4.099690914154053" y="12.846081733703613" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_59_bot_Al" unit="mm" x="4.099690914154053" y="12.846081733703613" z="0.0005000000237487257"/>
+    <position name="SOLID0251_60_bot_Al" unit="mm" x="4.123691082000732" y="12.843082427978516" z="0.0005000000237487257"/>
+    <position name="SOLID0251_61_bot_Al" unit="mm" x="4.123691082000732" y="12.843082427978516" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_62_bot_Al" unit="mm" x="4.147690773010254" y="12.836082458496094" z="0.0005000000237487257"/>
+    <position name="SOLID0251_63_bot_Al" unit="mm" x="4.147690773010254" y="12.836082458496094" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_64_bot_Al" unit="mm" x="4.16969108581543" y="12.824082374572754" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_65_bot_Al" unit="mm" x="4.16969108581543" y="12.824082374572754" z="0.0005000000237487257"/>
+    <position name="SOLID0251_66_bot_Al" unit="mm" x="4.188691139221191" y="12.80808162689209" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_67_bot_Al" unit="mm" x="4.188691139221191" y="12.80808162689209" z="0.0005000000237487257"/>
+    <position name="SOLID0251_68_bot_Al" unit="mm" x="5.851690769195557" y="11.146081924438477" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_69_bot_Al" unit="mm" x="5.851690769195557" y="11.146081924438477" z="0.0005000000237487257"/>
+    <position name="SOLID0251_70_bot_Al" unit="mm" x="6.846691131591797" y="11.146081924438477" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_71_bot_Al" unit="mm" x="6.846691131591797" y="11.146081924438477" z="0.0005000000237487257"/>
+    <position name="SOLID0251_72_bot_Al" unit="mm" x="9.00969123840332" y="13.30808162689209" z="0.0005000000237487257"/>
+    <position name="SOLID0251_73_bot_Al" unit="mm" x="9.00969123840332" y="13.30808162689209" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_74_bot_Al" unit="mm" x="9.028691291809082" y="13.324082374572754" z="0.0005000000237487257"/>
+    <position name="SOLID0251_75_bot_Al" unit="mm" x="9.028691291809082" y="13.324082374572754" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_76_bot_Al" unit="mm" x="9.050690650939941" y="13.336082458496094" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_77_bot_Al" unit="mm" x="9.050690650939941" y="13.336082458496094" z="0.0005000000237487257"/>
+    <position name="SOLID0251_78_bot_Al" unit="mm" x="9.074690818786621" y="13.343082427978516" z="0.0005000000237487257"/>
+    <position name="SOLID0251_79_bot_Al" unit="mm" x="9.074690818786621" y="13.343082427978516" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_80_bot_Al" unit="mm" x="9.099691390991211" y="13.346081733703613" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_81_bot_Al" unit="mm" x="9.099691390991211" y="13.346081733703613" z="0.0005000000237487257"/>
+    <position name="SOLID0251_82_bot_Al" unit="mm" x="16.399690628051758" y="13.346081733703613" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_83_bot_Al" unit="mm" x="16.399690628051758" y="13.346081733703613" z="0.0005000000237487257"/>
+    <position name="SOLID0251_84_bot_Al" unit="mm" x="16.423690795898438" y="13.343082427978516" z="0.0005000000237487257"/>
+    <position name="SOLID0251_85_bot_Al" unit="mm" x="16.423690795898438" y="13.343082427978516" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_86_bot_Al" unit="mm" x="16.447690963745117" y="13.336082458496094" z="0.0005000000237487257"/>
+    <position name="SOLID0251_87_bot_Al" unit="mm" x="16.447690963745117" y="13.336082458496094" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_88_bot_Al" unit="mm" x="16.469690322875977" y="13.324082374572754" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_89_bot_Al" unit="mm" x="16.469690322875977" y="13.324082374572754" z="0.0005000000237487257"/>
+    <position name="SOLID0251_90_bot_Al" unit="mm" x="16.488691329956055" y="13.30808162689209" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_91_bot_Al" unit="mm" x="16.488691329956055" y="13.30808162689209" z="0.0005000000237487257"/>
+    <position name="SOLID0251_92_bot_Al" unit="mm" x="18.7886905670166" y="11.008082389831543" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_93_bot_Al" unit="mm" x="18.7886905670166" y="11.008082389831543" z="0.0005000000237487257"/>
+    <position name="SOLID0251_94_bot_Al" unit="mm" x="18.804691314697266" y="10.989082336425781" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_95_bot_Al" unit="mm" x="18.804691314697266" y="10.989082336425781" z="0.0005000000237487257"/>
+    <position name="SOLID0251_96_bot_Al" unit="mm" x="18.81669044494629" y="10.967082023620605" z="0.0005000000237487257"/>
+    <position name="SOLID0251_97_bot_Al" unit="mm" x="18.81669044494629" y="10.967082023620605" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_98_bot_Al" unit="mm" x="18.82369041442871" y="10.943081855773926" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_99_bot_Al" unit="mm" x="18.82369041442871" y="10.943081855773926" z="0.0005000000237487257"/>
+    <position name="SOLID0251_100_bot_Al" unit="mm" x="18.826690673828125" y="10.919081687927246" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_101_bot_Al" unit="mm" x="18.826690673828125" y="10.919081687927246" z="0.0005000000237487257"/>
+    <position name="SOLID0251_102_bot_Al" unit="mm" x="18.826690673828125" y="-5.5289177894592285" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_103_bot_Al" unit="mm" x="18.826690673828125" y="-5.5289177894592285" z="0.0005000000237487257"/>
+    <position name="SOLID0251_104_bot_Al" unit="mm" x="19.951690673828125" y="-6.6539177894592285" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_105_bot_Al" unit="mm" x="19.951690673828125" y="-6.6539177894592285" z="0.0005000000237487257"/>
+    <position name="SOLID0251_106_bot_Al" unit="mm" x="43.8466911315918" y="-6.6539177894592285" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_107_bot_Al" unit="mm" x="43.8466911315918" y="-6.6539177894592285" z="0.0005000000237487257"/>
+    <position name="SOLID0251_108_bot_Al" unit="mm" x="44.50968933105469" y="-5.991918087005615" z="0.0005000000237487257"/>
+    <position name="SOLID0251_109_bot_Al" unit="mm" x="44.50968933105469" y="-5.991918087005615" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_110_bot_Al" unit="mm" x="44.528690338134766" y="-5.975917816162109" z="0.0005000000237487257"/>
+    <position name="SOLID0251_111_bot_Al" unit="mm" x="44.528690338134766" y="-5.975917816162109" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_112_bot_Al" unit="mm" x="44.550689697265625" y="-5.963918209075928" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_113_bot_Al" unit="mm" x="44.550689697265625" y="-5.963918209075928" z="0.0005000000237487257"/>
+    <position name="SOLID0251_114_bot_Al" unit="mm" x="44.57469177246094" y="-5.956917762756348" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_115_bot_Al" unit="mm" x="44.57469177246094" y="-5.956917762756348" z="0.0005000000237487257"/>
+    <position name="SOLID0251_116_bot_Al" unit="mm" x="44.598690032958984" y="-5.953917980194092" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_117_bot_Al" unit="mm" x="44.598690032958984" y="-5.953917980194092" z="0.0005000000237487257"/>
+    <position name="SOLID0251_118_bot_Al" unit="mm" x="47.47269058227539" y="-5.953917980194092" z="-0.0005000000237487257"/>
+    <position name="SOLID0251_119_bot_Al" unit="mm" x="47.47269058227539" y="-5.953917980194092" z="0.0005000000237487257"/>
+  </define>
+  <materials/>
+  <solids>
+    <tessellated name="SOLID0241_bot_Al">
+      <triangular vertex1="SOLID0241_0_bot_Al" vertex2="SOLID0241_1_bot_Al" vertex3="SOLID0241_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_2_bot_Al" vertex2="SOLID0241_1_bot_Al" vertex3="SOLID0241_3_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_1_bot_Al" vertex2="SOLID0241_4_bot_Al" vertex3="SOLID0241_3_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_3_bot_Al" vertex2="SOLID0241_4_bot_Al" vertex3="SOLID0241_5_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_4_bot_Al" vertex2="SOLID0241_6_bot_Al" vertex3="SOLID0241_5_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_4_bot_Al" vertex2="SOLID0241_7_bot_Al" vertex3="SOLID0241_6_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_7_bot_Al" vertex2="SOLID0241_8_bot_Al" vertex3="SOLID0241_6_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_6_bot_Al" vertex2="SOLID0241_8_bot_Al" vertex3="SOLID0241_9_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_8_bot_Al" vertex2="SOLID0241_10_bot_Al" vertex3="SOLID0241_9_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_9_bot_Al" vertex2="SOLID0241_10_bot_Al" vertex3="SOLID0241_11_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_10_bot_Al" vertex2="SOLID0241_12_bot_Al" vertex3="SOLID0241_11_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_10_bot_Al" vertex2="SOLID0241_13_bot_Al" vertex3="SOLID0241_12_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_13_bot_Al" vertex2="SOLID0241_14_bot_Al" vertex3="SOLID0241_12_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_12_bot_Al" vertex2="SOLID0241_14_bot_Al" vertex3="SOLID0241_15_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_14_bot_Al" vertex2="SOLID0241_16_bot_Al" vertex3="SOLID0241_15_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_15_bot_Al" vertex2="SOLID0241_16_bot_Al" vertex3="SOLID0241_17_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_16_bot_Al" vertex2="SOLID0241_18_bot_Al" vertex3="SOLID0241_17_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_17_bot_Al" vertex2="SOLID0241_18_bot_Al" vertex3="SOLID0241_19_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_18_bot_Al" vertex2="SOLID0241_20_bot_Al" vertex3="SOLID0241_19_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_19_bot_Al" vertex2="SOLID0241_20_bot_Al" vertex3="SOLID0241_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_20_bot_Al" vertex2="SOLID0241_22_bot_Al" vertex3="SOLID0241_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_20_bot_Al" vertex2="SOLID0241_23_bot_Al" vertex3="SOLID0241_22_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_23_bot_Al" vertex2="SOLID0241_24_bot_Al" vertex3="SOLID0241_22_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_22_bot_Al" vertex2="SOLID0241_24_bot_Al" vertex3="SOLID0241_25_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_24_bot_Al" vertex2="SOLID0241_26_bot_Al" vertex3="SOLID0241_25_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_24_bot_Al" vertex2="SOLID0241_27_bot_Al" vertex3="SOLID0241_26_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_27_bot_Al" vertex2="SOLID0241_28_bot_Al" vertex3="SOLID0241_26_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_26_bot_Al" vertex2="SOLID0241_28_bot_Al" vertex3="SOLID0241_29_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_28_bot_Al" vertex2="SOLID0241_30_bot_Al" vertex3="SOLID0241_29_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_29_bot_Al" vertex2="SOLID0241_30_bot_Al" vertex3="SOLID0241_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_30_bot_Al" vertex2="SOLID0241_32_bot_Al" vertex3="SOLID0241_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_30_bot_Al" vertex2="SOLID0241_33_bot_Al" vertex3="SOLID0241_32_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_33_bot_Al" vertex2="SOLID0241_34_bot_Al" vertex3="SOLID0241_32_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_32_bot_Al" vertex2="SOLID0241_34_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_34_bot_Al" vertex2="SOLID0241_36_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_34_bot_Al" vertex2="SOLID0241_37_bot_Al" vertex3="SOLID0241_36_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_37_bot_Al" vertex2="SOLID0241_38_bot_Al" vertex3="SOLID0241_36_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_36_bot_Al" vertex2="SOLID0241_38_bot_Al" vertex3="SOLID0241_39_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_38_bot_Al" vertex2="SOLID0241_40_bot_Al" vertex3="SOLID0241_39_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_38_bot_Al" vertex2="SOLID0241_41_bot_Al" vertex3="SOLID0241_40_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_41_bot_Al" vertex2="SOLID0241_42_bot_Al" vertex3="SOLID0241_40_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_40_bot_Al" vertex2="SOLID0241_42_bot_Al" vertex3="SOLID0241_43_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_42_bot_Al" vertex2="SOLID0241_44_bot_Al" vertex3="SOLID0241_43_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_43_bot_Al" vertex2="SOLID0241_44_bot_Al" vertex3="SOLID0241_45_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_44_bot_Al" vertex2="SOLID0241_46_bot_Al" vertex3="SOLID0241_45_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_45_bot_Al" vertex2="SOLID0241_46_bot_Al" vertex3="SOLID0241_47_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_46_bot_Al" vertex2="SOLID0241_48_bot_Al" vertex3="SOLID0241_47_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_47_bot_Al" vertex2="SOLID0241_48_bot_Al" vertex3="SOLID0241_49_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_48_bot_Al" vertex2="SOLID0241_50_bot_Al" vertex3="SOLID0241_49_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_49_bot_Al" vertex2="SOLID0241_50_bot_Al" vertex3="SOLID0241_51_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_50_bot_Al" vertex2="SOLID0241_52_bot_Al" vertex3="SOLID0241_51_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_51_bot_Al" vertex2="SOLID0241_52_bot_Al" vertex3="SOLID0241_53_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_52_bot_Al" vertex2="SOLID0241_54_bot_Al" vertex3="SOLID0241_53_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_53_bot_Al" vertex2="SOLID0241_54_bot_Al" vertex3="SOLID0241_55_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_54_bot_Al" vertex2="SOLID0241_56_bot_Al" vertex3="SOLID0241_55_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_55_bot_Al" vertex2="SOLID0241_56_bot_Al" vertex3="SOLID0241_57_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_56_bot_Al" vertex2="SOLID0241_58_bot_Al" vertex3="SOLID0241_57_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_56_bot_Al" vertex2="SOLID0241_59_bot_Al" vertex3="SOLID0241_58_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_59_bot_Al" vertex2="SOLID0241_60_bot_Al" vertex3="SOLID0241_58_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_58_bot_Al" vertex2="SOLID0241_60_bot_Al" vertex3="SOLID0241_61_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_60_bot_Al" vertex2="SOLID0241_62_bot_Al" vertex3="SOLID0241_61_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_61_bot_Al" vertex2="SOLID0241_62_bot_Al" vertex3="SOLID0241_63_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_62_bot_Al" vertex2="SOLID0241_64_bot_Al" vertex3="SOLID0241_63_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_63_bot_Al" vertex2="SOLID0241_64_bot_Al" vertex3="SOLID0241_65_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_64_bot_Al" vertex2="SOLID0241_66_bot_Al" vertex3="SOLID0241_65_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_65_bot_Al" vertex2="SOLID0241_66_bot_Al" vertex3="SOLID0241_67_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_66_bot_Al" vertex2="SOLID0241_68_bot_Al" vertex3="SOLID0241_67_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_67_bot_Al" vertex2="SOLID0241_68_bot_Al" vertex3="SOLID0241_69_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_68_bot_Al" vertex2="SOLID0241_70_bot_Al" vertex3="SOLID0241_69_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_69_bot_Al" vertex2="SOLID0241_70_bot_Al" vertex3="SOLID0241_71_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_70_bot_Al" vertex2="SOLID0241_72_bot_Al" vertex3="SOLID0241_71_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_71_bot_Al" vertex2="SOLID0241_72_bot_Al" vertex3="SOLID0241_73_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_72_bot_Al" vertex2="SOLID0241_74_bot_Al" vertex3="SOLID0241_73_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_73_bot_Al" vertex2="SOLID0241_74_bot_Al" vertex3="SOLID0241_75_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_74_bot_Al" vertex2="SOLID0241_76_bot_Al" vertex3="SOLID0241_75_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_75_bot_Al" vertex2="SOLID0241_76_bot_Al" vertex3="SOLID0241_77_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_76_bot_Al" vertex2="SOLID0241_78_bot_Al" vertex3="SOLID0241_77_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_77_bot_Al" vertex2="SOLID0241_78_bot_Al" vertex3="SOLID0241_79_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_78_bot_Al" vertex2="SOLID0241_80_bot_Al" vertex3="SOLID0241_79_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_79_bot_Al" vertex2="SOLID0241_80_bot_Al" vertex3="SOLID0241_81_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_80_bot_Al" vertex2="SOLID0241_82_bot_Al" vertex3="SOLID0241_81_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_80_bot_Al" vertex2="SOLID0241_83_bot_Al" vertex3="SOLID0241_82_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_83_bot_Al" vertex2="SOLID0241_84_bot_Al" vertex3="SOLID0241_82_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_82_bot_Al" vertex2="SOLID0241_84_bot_Al" vertex3="SOLID0241_85_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_84_bot_Al" vertex2="SOLID0241_86_bot_Al" vertex3="SOLID0241_85_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_85_bot_Al" vertex2="SOLID0241_86_bot_Al" vertex3="SOLID0241_87_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_86_bot_Al" vertex2="SOLID0241_88_bot_Al" vertex3="SOLID0241_87_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_87_bot_Al" vertex2="SOLID0241_88_bot_Al" vertex3="SOLID0241_89_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_88_bot_Al" vertex2="SOLID0241_90_bot_Al" vertex3="SOLID0241_89_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_89_bot_Al" vertex2="SOLID0241_90_bot_Al" vertex3="SOLID0241_91_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_90_bot_Al" vertex2="SOLID0241_92_bot_Al" vertex3="SOLID0241_91_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_91_bot_Al" vertex2="SOLID0241_92_bot_Al" vertex3="SOLID0241_93_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_92_bot_Al" vertex2="SOLID0241_94_bot_Al" vertex3="SOLID0241_93_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_93_bot_Al" vertex2="SOLID0241_94_bot_Al" vertex3="SOLID0241_95_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_94_bot_Al" vertex2="SOLID0241_96_bot_Al" vertex3="SOLID0241_95_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_95_bot_Al" vertex2="SOLID0241_96_bot_Al" vertex3="SOLID0241_97_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_96_bot_Al" vertex2="SOLID0241_98_bot_Al" vertex3="SOLID0241_97_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_97_bot_Al" vertex2="SOLID0241_98_bot_Al" vertex3="SOLID0241_99_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_98_bot_Al" vertex2="SOLID0241_100_bot_Al" vertex3="SOLID0241_99_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_98_bot_Al" vertex2="SOLID0241_101_bot_Al" vertex3="SOLID0241_100_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_101_bot_Al" vertex2="SOLID0241_102_bot_Al" vertex3="SOLID0241_100_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_100_bot_Al" vertex2="SOLID0241_102_bot_Al" vertex3="SOLID0241_103_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_102_bot_Al" vertex2="SOLID0241_104_bot_Al" vertex3="SOLID0241_103_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_103_bot_Al" vertex2="SOLID0241_104_bot_Al" vertex3="SOLID0241_105_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_104_bot_Al" vertex2="SOLID0241_106_bot_Al" vertex3="SOLID0241_105_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_104_bot_Al" vertex2="SOLID0241_107_bot_Al" vertex3="SOLID0241_106_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_107_bot_Al" vertex2="SOLID0241_108_bot_Al" vertex3="SOLID0241_106_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_106_bot_Al" vertex2="SOLID0241_108_bot_Al" vertex3="SOLID0241_109_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_108_bot_Al" vertex2="SOLID0241_110_bot_Al" vertex3="SOLID0241_109_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_109_bot_Al" vertex2="SOLID0241_110_bot_Al" vertex3="SOLID0241_111_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_110_bot_Al" vertex2="SOLID0241_112_bot_Al" vertex3="SOLID0241_111_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_111_bot_Al" vertex2="SOLID0241_112_bot_Al" vertex3="SOLID0241_113_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_112_bot_Al" vertex2="SOLID0241_114_bot_Al" vertex3="SOLID0241_113_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_113_bot_Al" vertex2="SOLID0241_114_bot_Al" vertex3="SOLID0241_115_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_114_bot_Al" vertex2="SOLID0241_116_bot_Al" vertex3="SOLID0241_115_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_115_bot_Al" vertex2="SOLID0241_116_bot_Al" vertex3="SOLID0241_117_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_116_bot_Al" vertex2="SOLID0241_118_bot_Al" vertex3="SOLID0241_117_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_117_bot_Al" vertex2="SOLID0241_118_bot_Al" vertex3="SOLID0241_119_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_0_bot_Al" vertex3="SOLID0241_119_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_119_bot_Al" vertex2="SOLID0241_0_bot_Al" vertex3="SOLID0241_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_0_bot_Al" vertex2="SOLID0241_4_bot_Al" vertex3="SOLID0241_1_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_4_bot_Al" vertex3="SOLID0241_0_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_7_bot_Al" vertex3="SOLID0241_4_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_8_bot_Al" vertex3="SOLID0241_7_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_10_bot_Al" vertex3="SOLID0241_8_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_13_bot_Al" vertex3="SOLID0241_10_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_14_bot_Al" vertex3="SOLID0241_13_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_14_bot_Al" vertex2="SOLID0241_116_bot_Al" vertex3="SOLID0241_16_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_16_bot_Al" vertex2="SOLID0241_116_bot_Al" vertex3="SOLID0241_18_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_18_bot_Al" vertex2="SOLID0241_116_bot_Al" vertex3="SOLID0241_20_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_20_bot_Al" vertex2="SOLID0241_116_bot_Al" vertex3="SOLID0241_23_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_118_bot_Al" vertex2="SOLID0241_116_bot_Al" vertex3="SOLID0241_14_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_116_bot_Al" vertex2="SOLID0241_24_bot_Al" vertex3="SOLID0241_23_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_116_bot_Al" vertex2="SOLID0241_27_bot_Al" vertex3="SOLID0241_24_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_116_bot_Al" vertex2="SOLID0241_28_bot_Al" vertex3="SOLID0241_27_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_116_bot_Al" vertex2="SOLID0241_30_bot_Al" vertex3="SOLID0241_28_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_116_bot_Al" vertex2="SOLID0241_33_bot_Al" vertex3="SOLID0241_30_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_66_bot_Al" vertex2="SOLID0241_64_bot_Al" vertex3="SOLID0241_68_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_68_bot_Al" vertex2="SOLID0241_64_bot_Al" vertex3="SOLID0241_70_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_70_bot_Al" vertex2="SOLID0241_64_bot_Al" vertex3="SOLID0241_72_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_33_bot_Al" vertex2="SOLID0241_114_bot_Al" vertex3="SOLID0241_34_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_114_bot_Al" vertex2="SOLID0241_112_bot_Al" vertex3="SOLID0241_34_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_112_bot_Al" vertex2="SOLID0241_110_bot_Al" vertex3="SOLID0241_34_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_110_bot_Al" vertex2="SOLID0241_108_bot_Al" vertex3="SOLID0241_34_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_108_bot_Al" vertex2="SOLID0241_107_bot_Al" vertex3="SOLID0241_34_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_107_bot_Al" vertex2="SOLID0241_37_bot_Al" vertex3="SOLID0241_34_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_98_bot_Al" vertex2="SOLID0241_37_bot_Al" vertex3="SOLID0241_101_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_101_bot_Al" vertex2="SOLID0241_37_bot_Al" vertex3="SOLID0241_102_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_102_bot_Al" vertex2="SOLID0241_37_bot_Al" vertex3="SOLID0241_104_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_104_bot_Al" vertex2="SOLID0241_37_bot_Al" vertex3="SOLID0241_107_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_72_bot_Al" vertex2="SOLID0241_80_bot_Al" vertex3="SOLID0241_74_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_74_bot_Al" vertex2="SOLID0241_80_bot_Al" vertex3="SOLID0241_76_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_76_bot_Al" vertex2="SOLID0241_80_bot_Al" vertex3="SOLID0241_78_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_98_bot_Al" vertex2="SOLID0241_38_bot_Al" vertex3="SOLID0241_37_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_92_bot_Al" vertex2="SOLID0241_38_bot_Al" vertex3="SOLID0241_94_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_94_bot_Al" vertex2="SOLID0241_38_bot_Al" vertex3="SOLID0241_96_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_96_bot_Al" vertex2="SOLID0241_38_bot_Al" vertex3="SOLID0241_98_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_92_bot_Al" vertex2="SOLID0241_41_bot_Al" vertex3="SOLID0241_38_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_84_bot_Al" vertex2="SOLID0241_41_bot_Al" vertex3="SOLID0241_86_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_86_bot_Al" vertex2="SOLID0241_41_bot_Al" vertex3="SOLID0241_88_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_88_bot_Al" vertex2="SOLID0241_41_bot_Al" vertex3="SOLID0241_90_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_90_bot_Al" vertex2="SOLID0241_41_bot_Al" vertex3="SOLID0241_92_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_83_bot_Al" vertex2="SOLID0241_42_bot_Al" vertex3="SOLID0241_84_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_84_bot_Al" vertex2="SOLID0241_42_bot_Al" vertex3="SOLID0241_41_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_80_bot_Al" vertex2="SOLID0241_44_bot_Al" vertex3="SOLID0241_83_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_83_bot_Al" vertex2="SOLID0241_44_bot_Al" vertex3="SOLID0241_42_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_80_bot_Al" vertex2="SOLID0241_46_bot_Al" vertex3="SOLID0241_44_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_80_bot_Al" vertex2="SOLID0241_48_bot_Al" vertex3="SOLID0241_46_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_80_bot_Al" vertex2="SOLID0241_50_bot_Al" vertex3="SOLID0241_48_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_72_bot_Al" vertex2="SOLID0241_52_bot_Al" vertex3="SOLID0241_80_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_80_bot_Al" vertex2="SOLID0241_52_bot_Al" vertex3="SOLID0241_50_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_64_bot_Al" vertex2="SOLID0241_54_bot_Al" vertex3="SOLID0241_72_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_72_bot_Al" vertex2="SOLID0241_54_bot_Al" vertex3="SOLID0241_52_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_64_bot_Al" vertex2="SOLID0241_56_bot_Al" vertex3="SOLID0241_54_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_56_bot_Al" vertex2="SOLID0241_62_bot_Al" vertex3="SOLID0241_59_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_59_bot_Al" vertex2="SOLID0241_62_bot_Al" vertex3="SOLID0241_60_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_64_bot_Al" vertex2="SOLID0241_62_bot_Al" vertex3="SOLID0241_56_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_116_bot_Al" vertex2="SOLID0241_114_bot_Al" vertex3="SOLID0241_33_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_5_bot_Al" vertex2="SOLID0241_2_bot_Al" vertex3="SOLID0241_3_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_5_bot_Al" vertex2="SOLID0241_119_bot_Al" vertex3="SOLID0241_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_6_bot_Al" vertex2="SOLID0241_119_bot_Al" vertex3="SOLID0241_5_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_9_bot_Al" vertex2="SOLID0241_119_bot_Al" vertex3="SOLID0241_6_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_11_bot_Al" vertex2="SOLID0241_119_bot_Al" vertex3="SOLID0241_9_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_12_bot_Al" vertex2="SOLID0241_119_bot_Al" vertex3="SOLID0241_11_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_15_bot_Al" vertex2="SOLID0241_119_bot_Al" vertex3="SOLID0241_12_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_117_bot_Al" vertex2="SOLID0241_15_bot_Al" vertex3="SOLID0241_17_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_117_bot_Al" vertex2="SOLID0241_17_bot_Al" vertex3="SOLID0241_19_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_117_bot_Al" vertex2="SOLID0241_19_bot_Al" vertex3="SOLID0241_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_117_bot_Al" vertex2="SOLID0241_21_bot_Al" vertex3="SOLID0241_22_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_117_bot_Al" vertex2="SOLID0241_119_bot_Al" vertex3="SOLID0241_15_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_25_bot_Al" vertex2="SOLID0241_117_bot_Al" vertex3="SOLID0241_22_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_26_bot_Al" vertex2="SOLID0241_117_bot_Al" vertex3="SOLID0241_25_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_29_bot_Al" vertex2="SOLID0241_117_bot_Al" vertex3="SOLID0241_26_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_31_bot_Al" vertex2="SOLID0241_117_bot_Al" vertex3="SOLID0241_29_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_32_bot_Al" vertex2="SOLID0241_117_bot_Al" vertex3="SOLID0241_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_65_bot_Al" vertex2="SOLID0241_67_bot_Al" vertex3="SOLID0241_69_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_65_bot_Al" vertex2="SOLID0241_69_bot_Al" vertex3="SOLID0241_71_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_65_bot_Al" vertex2="SOLID0241_71_bot_Al" vertex3="SOLID0241_73_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_115_bot_Al" vertex2="SOLID0241_32_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_113_bot_Al" vertex2="SOLID0241_115_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_111_bot_Al" vertex2="SOLID0241_113_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_109_bot_Al" vertex2="SOLID0241_111_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_106_bot_Al" vertex2="SOLID0241_109_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_36_bot_Al" vertex2="SOLID0241_106_bot_Al" vertex3="SOLID0241_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_36_bot_Al" vertex2="SOLID0241_99_bot_Al" vertex3="SOLID0241_100_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_36_bot_Al" vertex2="SOLID0241_100_bot_Al" vertex3="SOLID0241_103_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_36_bot_Al" vertex2="SOLID0241_103_bot_Al" vertex3="SOLID0241_105_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_36_bot_Al" vertex2="SOLID0241_105_bot_Al" vertex3="SOLID0241_106_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_81_bot_Al" vertex2="SOLID0241_73_bot_Al" vertex3="SOLID0241_75_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_81_bot_Al" vertex2="SOLID0241_75_bot_Al" vertex3="SOLID0241_77_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_81_bot_Al" vertex2="SOLID0241_77_bot_Al" vertex3="SOLID0241_79_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_39_bot_Al" vertex2="SOLID0241_99_bot_Al" vertex3="SOLID0241_36_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_39_bot_Al" vertex2="SOLID0241_93_bot_Al" vertex3="SOLID0241_95_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_39_bot_Al" vertex2="SOLID0241_95_bot_Al" vertex3="SOLID0241_97_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_39_bot_Al" vertex2="SOLID0241_97_bot_Al" vertex3="SOLID0241_99_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_40_bot_Al" vertex2="SOLID0241_93_bot_Al" vertex3="SOLID0241_39_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_40_bot_Al" vertex2="SOLID0241_85_bot_Al" vertex3="SOLID0241_87_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_40_bot_Al" vertex2="SOLID0241_87_bot_Al" vertex3="SOLID0241_89_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_40_bot_Al" vertex2="SOLID0241_89_bot_Al" vertex3="SOLID0241_91_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_40_bot_Al" vertex2="SOLID0241_91_bot_Al" vertex3="SOLID0241_93_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_43_bot_Al" vertex2="SOLID0241_82_bot_Al" vertex3="SOLID0241_85_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_43_bot_Al" vertex2="SOLID0241_85_bot_Al" vertex3="SOLID0241_40_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_45_bot_Al" vertex2="SOLID0241_81_bot_Al" vertex3="SOLID0241_82_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_45_bot_Al" vertex2="SOLID0241_82_bot_Al" vertex3="SOLID0241_43_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_47_bot_Al" vertex2="SOLID0241_81_bot_Al" vertex3="SOLID0241_45_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_49_bot_Al" vertex2="SOLID0241_81_bot_Al" vertex3="SOLID0241_47_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_51_bot_Al" vertex2="SOLID0241_81_bot_Al" vertex3="SOLID0241_49_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_53_bot_Al" vertex2="SOLID0241_73_bot_Al" vertex3="SOLID0241_81_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_53_bot_Al" vertex2="SOLID0241_81_bot_Al" vertex3="SOLID0241_51_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_55_bot_Al" vertex2="SOLID0241_65_bot_Al" vertex3="SOLID0241_73_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_55_bot_Al" vertex2="SOLID0241_73_bot_Al" vertex3="SOLID0241_53_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_57_bot_Al" vertex2="SOLID0241_65_bot_Al" vertex3="SOLID0241_55_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_63_bot_Al" vertex2="SOLID0241_57_bot_Al" vertex3="SOLID0241_58_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_63_bot_Al" vertex2="SOLID0241_58_bot_Al" vertex3="SOLID0241_61_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_63_bot_Al" vertex2="SOLID0241_65_bot_Al" vertex3="SOLID0241_57_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0241_115_bot_Al" vertex2="SOLID0241_117_bot_Al" vertex3="SOLID0241_32_bot_Al" type="ABSOLUTE"/>
+    </tessellated>
+    <tessellated name="SOLID0251_bot_Al">
+      <triangular vertex1="SOLID0251_0_bot_Al" vertex2="SOLID0251_1_bot_Al" vertex3="SOLID0251_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_2_bot_Al" vertex2="SOLID0251_1_bot_Al" vertex3="SOLID0251_3_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_1_bot_Al" vertex2="SOLID0251_4_bot_Al" vertex3="SOLID0251_3_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_3_bot_Al" vertex2="SOLID0251_4_bot_Al" vertex3="SOLID0251_5_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_4_bot_Al" vertex2="SOLID0251_6_bot_Al" vertex3="SOLID0251_5_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_5_bot_Al" vertex2="SOLID0251_6_bot_Al" vertex3="SOLID0251_7_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_6_bot_Al" vertex2="SOLID0251_8_bot_Al" vertex3="SOLID0251_7_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_7_bot_Al" vertex2="SOLID0251_8_bot_Al" vertex3="SOLID0251_9_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_8_bot_Al" vertex2="SOLID0251_10_bot_Al" vertex3="SOLID0251_9_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_9_bot_Al" vertex2="SOLID0251_10_bot_Al" vertex3="SOLID0251_11_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_10_bot_Al" vertex2="SOLID0251_12_bot_Al" vertex3="SOLID0251_11_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_11_bot_Al" vertex2="SOLID0251_12_bot_Al" vertex3="SOLID0251_13_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_12_bot_Al" vertex2="SOLID0251_14_bot_Al" vertex3="SOLID0251_13_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_13_bot_Al" vertex2="SOLID0251_14_bot_Al" vertex3="SOLID0251_15_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_14_bot_Al" vertex2="SOLID0251_16_bot_Al" vertex3="SOLID0251_15_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_15_bot_Al" vertex2="SOLID0251_16_bot_Al" vertex3="SOLID0251_17_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_16_bot_Al" vertex2="SOLID0251_18_bot_Al" vertex3="SOLID0251_17_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_17_bot_Al" vertex2="SOLID0251_18_bot_Al" vertex3="SOLID0251_19_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_18_bot_Al" vertex2="SOLID0251_20_bot_Al" vertex3="SOLID0251_19_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_19_bot_Al" vertex2="SOLID0251_20_bot_Al" vertex3="SOLID0251_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_20_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_21_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_23_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_22_bot_Al" vertex2="SOLID0251_24_bot_Al" vertex3="SOLID0251_23_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_23_bot_Al" vertex2="SOLID0251_24_bot_Al" vertex3="SOLID0251_25_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_24_bot_Al" vertex2="SOLID0251_26_bot_Al" vertex3="SOLID0251_25_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_25_bot_Al" vertex2="SOLID0251_26_bot_Al" vertex3="SOLID0251_27_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_26_bot_Al" vertex2="SOLID0251_28_bot_Al" vertex3="SOLID0251_27_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_27_bot_Al" vertex2="SOLID0251_28_bot_Al" vertex3="SOLID0251_29_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_28_bot_Al" vertex2="SOLID0251_30_bot_Al" vertex3="SOLID0251_29_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_29_bot_Al" vertex2="SOLID0251_30_bot_Al" vertex3="SOLID0251_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_30_bot_Al" vertex2="SOLID0251_32_bot_Al" vertex3="SOLID0251_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_30_bot_Al" vertex2="SOLID0251_33_bot_Al" vertex3="SOLID0251_32_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_33_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_32_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_32_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_34_bot_Al" vertex2="SOLID0251_36_bot_Al" vertex3="SOLID0251_35_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_36_bot_Al" vertex3="SOLID0251_37_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_36_bot_Al" vertex2="SOLID0251_38_bot_Al" vertex3="SOLID0251_37_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_37_bot_Al" vertex2="SOLID0251_38_bot_Al" vertex3="SOLID0251_39_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_38_bot_Al" vertex2="SOLID0251_40_bot_Al" vertex3="SOLID0251_39_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_39_bot_Al" vertex2="SOLID0251_40_bot_Al" vertex3="SOLID0251_41_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_40_bot_Al" vertex2="SOLID0251_42_bot_Al" vertex3="SOLID0251_41_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_40_bot_Al" vertex2="SOLID0251_43_bot_Al" vertex3="SOLID0251_42_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_43_bot_Al" vertex2="SOLID0251_44_bot_Al" vertex3="SOLID0251_42_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_42_bot_Al" vertex2="SOLID0251_44_bot_Al" vertex3="SOLID0251_45_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_44_bot_Al" vertex2="SOLID0251_46_bot_Al" vertex3="SOLID0251_45_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_45_bot_Al" vertex2="SOLID0251_46_bot_Al" vertex3="SOLID0251_47_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_46_bot_Al" vertex2="SOLID0251_48_bot_Al" vertex3="SOLID0251_47_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_47_bot_Al" vertex2="SOLID0251_48_bot_Al" vertex3="SOLID0251_49_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_48_bot_Al" vertex2="SOLID0251_50_bot_Al" vertex3="SOLID0251_49_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_49_bot_Al" vertex2="SOLID0251_50_bot_Al" vertex3="SOLID0251_51_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_50_bot_Al" vertex2="SOLID0251_52_bot_Al" vertex3="SOLID0251_51_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_51_bot_Al" vertex2="SOLID0251_52_bot_Al" vertex3="SOLID0251_53_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_52_bot_Al" vertex2="SOLID0251_54_bot_Al" vertex3="SOLID0251_53_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_52_bot_Al" vertex2="SOLID0251_55_bot_Al" vertex3="SOLID0251_54_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_55_bot_Al" vertex2="SOLID0251_56_bot_Al" vertex3="SOLID0251_54_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_54_bot_Al" vertex2="SOLID0251_56_bot_Al" vertex3="SOLID0251_57_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_56_bot_Al" vertex2="SOLID0251_58_bot_Al" vertex3="SOLID0251_57_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_57_bot_Al" vertex2="SOLID0251_58_bot_Al" vertex3="SOLID0251_59_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_58_bot_Al" vertex2="SOLID0251_60_bot_Al" vertex3="SOLID0251_59_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_58_bot_Al" vertex2="SOLID0251_61_bot_Al" vertex3="SOLID0251_60_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_61_bot_Al" vertex2="SOLID0251_62_bot_Al" vertex3="SOLID0251_60_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_61_bot_Al" vertex2="SOLID0251_63_bot_Al" vertex3="SOLID0251_62_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_63_bot_Al" vertex2="SOLID0251_64_bot_Al" vertex3="SOLID0251_62_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_62_bot_Al" vertex2="SOLID0251_64_bot_Al" vertex3="SOLID0251_65_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_64_bot_Al" vertex2="SOLID0251_66_bot_Al" vertex3="SOLID0251_65_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_65_bot_Al" vertex2="SOLID0251_66_bot_Al" vertex3="SOLID0251_67_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_66_bot_Al" vertex2="SOLID0251_68_bot_Al" vertex3="SOLID0251_67_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_67_bot_Al" vertex2="SOLID0251_68_bot_Al" vertex3="SOLID0251_69_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_68_bot_Al" vertex2="SOLID0251_70_bot_Al" vertex3="SOLID0251_69_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_69_bot_Al" vertex2="SOLID0251_70_bot_Al" vertex3="SOLID0251_71_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_70_bot_Al" vertex2="SOLID0251_72_bot_Al" vertex3="SOLID0251_71_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_70_bot_Al" vertex2="SOLID0251_73_bot_Al" vertex3="SOLID0251_72_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_73_bot_Al" vertex2="SOLID0251_74_bot_Al" vertex3="SOLID0251_72_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_73_bot_Al" vertex2="SOLID0251_75_bot_Al" vertex3="SOLID0251_74_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_75_bot_Al" vertex2="SOLID0251_76_bot_Al" vertex3="SOLID0251_74_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_74_bot_Al" vertex2="SOLID0251_76_bot_Al" vertex3="SOLID0251_77_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_76_bot_Al" vertex2="SOLID0251_78_bot_Al" vertex3="SOLID0251_77_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_76_bot_Al" vertex2="SOLID0251_79_bot_Al" vertex3="SOLID0251_78_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_79_bot_Al" vertex2="SOLID0251_80_bot_Al" vertex3="SOLID0251_78_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_78_bot_Al" vertex2="SOLID0251_80_bot_Al" vertex3="SOLID0251_81_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_80_bot_Al" vertex2="SOLID0251_82_bot_Al" vertex3="SOLID0251_81_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_81_bot_Al" vertex2="SOLID0251_82_bot_Al" vertex3="SOLID0251_83_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_82_bot_Al" vertex2="SOLID0251_84_bot_Al" vertex3="SOLID0251_83_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_82_bot_Al" vertex2="SOLID0251_85_bot_Al" vertex3="SOLID0251_84_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_85_bot_Al" vertex2="SOLID0251_86_bot_Al" vertex3="SOLID0251_84_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_85_bot_Al" vertex2="SOLID0251_87_bot_Al" vertex3="SOLID0251_86_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_87_bot_Al" vertex2="SOLID0251_88_bot_Al" vertex3="SOLID0251_86_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_86_bot_Al" vertex2="SOLID0251_88_bot_Al" vertex3="SOLID0251_89_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_88_bot_Al" vertex2="SOLID0251_90_bot_Al" vertex3="SOLID0251_89_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_89_bot_Al" vertex2="SOLID0251_90_bot_Al" vertex3="SOLID0251_91_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_90_bot_Al" vertex2="SOLID0251_92_bot_Al" vertex3="SOLID0251_91_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_91_bot_Al" vertex2="SOLID0251_92_bot_Al" vertex3="SOLID0251_93_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_92_bot_Al" vertex2="SOLID0251_94_bot_Al" vertex3="SOLID0251_93_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_93_bot_Al" vertex2="SOLID0251_94_bot_Al" vertex3="SOLID0251_95_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_94_bot_Al" vertex2="SOLID0251_96_bot_Al" vertex3="SOLID0251_95_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_94_bot_Al" vertex2="SOLID0251_97_bot_Al" vertex3="SOLID0251_96_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_97_bot_Al" vertex2="SOLID0251_98_bot_Al" vertex3="SOLID0251_96_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_96_bot_Al" vertex2="SOLID0251_98_bot_Al" vertex3="SOLID0251_99_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_98_bot_Al" vertex2="SOLID0251_100_bot_Al" vertex3="SOLID0251_99_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_99_bot_Al" vertex2="SOLID0251_100_bot_Al" vertex3="SOLID0251_101_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_100_bot_Al" vertex2="SOLID0251_102_bot_Al" vertex3="SOLID0251_101_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_101_bot_Al" vertex2="SOLID0251_102_bot_Al" vertex3="SOLID0251_103_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_102_bot_Al" vertex2="SOLID0251_104_bot_Al" vertex3="SOLID0251_103_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_103_bot_Al" vertex2="SOLID0251_104_bot_Al" vertex3="SOLID0251_105_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_104_bot_Al" vertex2="SOLID0251_106_bot_Al" vertex3="SOLID0251_105_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_105_bot_Al" vertex2="SOLID0251_106_bot_Al" vertex3="SOLID0251_107_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_106_bot_Al" vertex2="SOLID0251_108_bot_Al" vertex3="SOLID0251_107_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_106_bot_Al" vertex2="SOLID0251_109_bot_Al" vertex3="SOLID0251_108_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_109_bot_Al" vertex2="SOLID0251_110_bot_Al" vertex3="SOLID0251_108_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_109_bot_Al" vertex2="SOLID0251_111_bot_Al" vertex3="SOLID0251_110_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_111_bot_Al" vertex2="SOLID0251_112_bot_Al" vertex3="SOLID0251_110_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_110_bot_Al" vertex2="SOLID0251_112_bot_Al" vertex3="SOLID0251_113_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_112_bot_Al" vertex2="SOLID0251_114_bot_Al" vertex3="SOLID0251_113_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_113_bot_Al" vertex2="SOLID0251_114_bot_Al" vertex3="SOLID0251_115_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_114_bot_Al" vertex2="SOLID0251_116_bot_Al" vertex3="SOLID0251_115_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_115_bot_Al" vertex2="SOLID0251_116_bot_Al" vertex3="SOLID0251_117_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_116_bot_Al" vertex2="SOLID0251_118_bot_Al" vertex3="SOLID0251_117_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_117_bot_Al" vertex2="SOLID0251_118_bot_Al" vertex3="SOLID0251_119_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_118_bot_Al" vertex2="SOLID0251_0_bot_Al" vertex3="SOLID0251_119_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_119_bot_Al" vertex2="SOLID0251_0_bot_Al" vertex3="SOLID0251_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_118_bot_Al" vertex2="SOLID0251_116_bot_Al" vertex3="SOLID0251_0_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_116_bot_Al" vertex2="SOLID0251_114_bot_Al" vertex3="SOLID0251_0_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_114_bot_Al" vertex2="SOLID0251_112_bot_Al" vertex3="SOLID0251_0_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_104_bot_Al" vertex2="SOLID0251_1_bot_Al" vertex3="SOLID0251_106_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_106_bot_Al" vertex2="SOLID0251_1_bot_Al" vertex3="SOLID0251_109_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_104_bot_Al" vertex2="SOLID0251_4_bot_Al" vertex3="SOLID0251_1_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_104_bot_Al" vertex2="SOLID0251_6_bot_Al" vertex3="SOLID0251_4_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_104_bot_Al" vertex2="SOLID0251_8_bot_Al" vertex3="SOLID0251_6_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_104_bot_Al" vertex2="SOLID0251_10_bot_Al" vertex3="SOLID0251_8_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_10_bot_Al" vertex2="SOLID0251_102_bot_Al" vertex3="SOLID0251_12_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_12_bot_Al" vertex2="SOLID0251_102_bot_Al" vertex3="SOLID0251_14_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_14_bot_Al" vertex2="SOLID0251_102_bot_Al" vertex3="SOLID0251_16_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_16_bot_Al" vertex2="SOLID0251_102_bot_Al" vertex3="SOLID0251_18_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_104_bot_Al" vertex2="SOLID0251_102_bot_Al" vertex3="SOLID0251_10_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_102_bot_Al" vertex2="SOLID0251_100_bot_Al" vertex3="SOLID0251_18_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_92_bot_Al" vertex2="SOLID0251_20_bot_Al" vertex3="SOLID0251_94_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_94_bot_Al" vertex2="SOLID0251_20_bot_Al" vertex3="SOLID0251_97_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_97_bot_Al" vertex2="SOLID0251_20_bot_Al" vertex3="SOLID0251_98_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_98_bot_Al" vertex2="SOLID0251_20_bot_Al" vertex3="SOLID0251_100_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_92_bot_Al" vertex2="SOLID0251_90_bot_Al" vertex3="SOLID0251_20_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_90_bot_Al" vertex2="SOLID0251_88_bot_Al" vertex3="SOLID0251_20_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_88_bot_Al" vertex2="SOLID0251_87_bot_Al" vertex3="SOLID0251_20_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_87_bot_Al" vertex2="SOLID0251_85_bot_Al" vertex3="SOLID0251_20_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_85_bot_Al" vertex2="SOLID0251_82_bot_Al" vertex3="SOLID0251_20_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_70_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_73_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_73_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_75_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_75_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_76_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_76_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_79_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_79_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_80_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_80_bot_Al" vertex2="SOLID0251_22_bot_Al" vertex3="SOLID0251_82_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_70_bot_Al" vertex2="SOLID0251_24_bot_Al" vertex3="SOLID0251_22_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_68_bot_Al" vertex2="SOLID0251_26_bot_Al" vertex3="SOLID0251_70_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_70_bot_Al" vertex2="SOLID0251_26_bot_Al" vertex3="SOLID0251_24_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_26_bot_Al" vertex2="SOLID0251_66_bot_Al" vertex3="SOLID0251_28_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_28_bot_Al" vertex2="SOLID0251_66_bot_Al" vertex3="SOLID0251_30_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_68_bot_Al" vertex2="SOLID0251_66_bot_Al" vertex3="SOLID0251_26_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_66_bot_Al" vertex2="SOLID0251_64_bot_Al" vertex3="SOLID0251_30_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_58_bot_Al" vertex2="SOLID0251_33_bot_Al" vertex3="SOLID0251_61_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_61_bot_Al" vertex2="SOLID0251_33_bot_Al" vertex3="SOLID0251_63_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_63_bot_Al" vertex2="SOLID0251_33_bot_Al" vertex3="SOLID0251_64_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_64_bot_Al" vertex2="SOLID0251_33_bot_Al" vertex3="SOLID0251_30_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_40_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_43_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_43_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_44_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_44_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_46_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_46_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_48_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_48_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_50_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_50_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_52_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_52_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_55_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_55_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_56_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_56_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_58_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_58_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_33_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_1_bot_Al" vertex2="SOLID0251_0_bot_Al" vertex3="SOLID0251_112_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_1_bot_Al" vertex2="SOLID0251_112_bot_Al" vertex3="SOLID0251_111_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_1_bot_Al" vertex2="SOLID0251_111_bot_Al" vertex3="SOLID0251_109_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_20_bot_Al" vertex2="SOLID0251_18_bot_Al" vertex3="SOLID0251_100_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_22_bot_Al" vertex2="SOLID0251_20_bot_Al" vertex3="SOLID0251_82_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_36_bot_Al" vertex2="SOLID0251_34_bot_Al" vertex3="SOLID0251_40_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_40_bot_Al" vertex2="SOLID0251_38_bot_Al" vertex3="SOLID0251_36_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_117_bot_Al" vertex2="SOLID0251_119_bot_Al" vertex3="SOLID0251_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_115_bot_Al" vertex2="SOLID0251_117_bot_Al" vertex3="SOLID0251_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_113_bot_Al" vertex2="SOLID0251_115_bot_Al" vertex3="SOLID0251_2_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_3_bot_Al" vertex2="SOLID0251_105_bot_Al" vertex3="SOLID0251_107_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_3_bot_Al" vertex2="SOLID0251_107_bot_Al" vertex3="SOLID0251_108_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_5_bot_Al" vertex2="SOLID0251_105_bot_Al" vertex3="SOLID0251_3_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_7_bot_Al" vertex2="SOLID0251_105_bot_Al" vertex3="SOLID0251_5_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_9_bot_Al" vertex2="SOLID0251_105_bot_Al" vertex3="SOLID0251_7_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_11_bot_Al" vertex2="SOLID0251_105_bot_Al" vertex3="SOLID0251_9_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_103_bot_Al" vertex2="SOLID0251_11_bot_Al" vertex3="SOLID0251_13_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_103_bot_Al" vertex2="SOLID0251_13_bot_Al" vertex3="SOLID0251_15_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_103_bot_Al" vertex2="SOLID0251_15_bot_Al" vertex3="SOLID0251_17_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_103_bot_Al" vertex2="SOLID0251_17_bot_Al" vertex3="SOLID0251_19_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_103_bot_Al" vertex2="SOLID0251_105_bot_Al" vertex3="SOLID0251_11_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_101_bot_Al" vertex2="SOLID0251_103_bot_Al" vertex3="SOLID0251_19_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_21_bot_Al" vertex2="SOLID0251_93_bot_Al" vertex3="SOLID0251_95_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_21_bot_Al" vertex2="SOLID0251_95_bot_Al" vertex3="SOLID0251_96_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_21_bot_Al" vertex2="SOLID0251_96_bot_Al" vertex3="SOLID0251_99_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_21_bot_Al" vertex2="SOLID0251_99_bot_Al" vertex3="SOLID0251_101_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_91_bot_Al" vertex2="SOLID0251_93_bot_Al" vertex3="SOLID0251_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_89_bot_Al" vertex2="SOLID0251_91_bot_Al" vertex3="SOLID0251_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_86_bot_Al" vertex2="SOLID0251_89_bot_Al" vertex3="SOLID0251_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_84_bot_Al" vertex2="SOLID0251_86_bot_Al" vertex3="SOLID0251_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_83_bot_Al" vertex2="SOLID0251_84_bot_Al" vertex3="SOLID0251_21_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_23_bot_Al" vertex2="SOLID0251_71_bot_Al" vertex3="SOLID0251_72_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_23_bot_Al" vertex2="SOLID0251_72_bot_Al" vertex3="SOLID0251_74_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_23_bot_Al" vertex2="SOLID0251_74_bot_Al" vertex3="SOLID0251_77_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_23_bot_Al" vertex2="SOLID0251_77_bot_Al" vertex3="SOLID0251_78_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_23_bot_Al" vertex2="SOLID0251_78_bot_Al" vertex3="SOLID0251_81_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_23_bot_Al" vertex2="SOLID0251_81_bot_Al" vertex3="SOLID0251_83_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_25_bot_Al" vertex2="SOLID0251_71_bot_Al" vertex3="SOLID0251_23_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_27_bot_Al" vertex2="SOLID0251_69_bot_Al" vertex3="SOLID0251_71_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_27_bot_Al" vertex2="SOLID0251_71_bot_Al" vertex3="SOLID0251_25_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_67_bot_Al" vertex2="SOLID0251_27_bot_Al" vertex3="SOLID0251_29_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_67_bot_Al" vertex2="SOLID0251_29_bot_Al" vertex3="SOLID0251_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_67_bot_Al" vertex2="SOLID0251_69_bot_Al" vertex3="SOLID0251_27_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_65_bot_Al" vertex2="SOLID0251_67_bot_Al" vertex3="SOLID0251_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_32_bot_Al" vertex2="SOLID0251_59_bot_Al" vertex3="SOLID0251_60_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_32_bot_Al" vertex2="SOLID0251_60_bot_Al" vertex3="SOLID0251_62_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_32_bot_Al" vertex2="SOLID0251_62_bot_Al" vertex3="SOLID0251_65_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_32_bot_Al" vertex2="SOLID0251_65_bot_Al" vertex3="SOLID0251_31_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_41_bot_Al" vertex3="SOLID0251_42_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_42_bot_Al" vertex3="SOLID0251_45_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_45_bot_Al" vertex3="SOLID0251_47_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_47_bot_Al" vertex3="SOLID0251_49_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_49_bot_Al" vertex3="SOLID0251_51_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_51_bot_Al" vertex3="SOLID0251_53_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_53_bot_Al" vertex3="SOLID0251_54_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_54_bot_Al" vertex3="SOLID0251_57_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_57_bot_Al" vertex3="SOLID0251_59_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_59_bot_Al" vertex3="SOLID0251_32_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_2_bot_Al" vertex2="SOLID0251_3_bot_Al" vertex3="SOLID0251_113_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_113_bot_Al" vertex2="SOLID0251_3_bot_Al" vertex3="SOLID0251_110_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_110_bot_Al" vertex2="SOLID0251_3_bot_Al" vertex3="SOLID0251_108_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_19_bot_Al" vertex2="SOLID0251_21_bot_Al" vertex3="SOLID0251_101_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_21_bot_Al" vertex2="SOLID0251_23_bot_Al" vertex3="SOLID0251_83_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_35_bot_Al" vertex2="SOLID0251_37_bot_Al" vertex3="SOLID0251_41_bot_Al" type="ABSOLUTE"/>
+      <triangular vertex1="SOLID0251_39_bot_Al" vertex2="SOLID0251_41_bot_Al" vertex3="SOLID0251_37_bot_Al" type="ABSOLUTE"/>
+    </tessellated>
+  </solids>
+  <structure>
+    <volume name="LV_SOLID024_bot_Al">
+      <materialref ref="G4_Al"/>
+      <solidref ref="SOLID0241_bot_Al"/>
+      <auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
+    </volume>
+    <volume name="LV_SOLID025_bot_Al">
+      <materialref ref="G4_Al"/>
+      <solidref ref="SOLID0251_bot_Al"/>
+      <auxiliary auxtype="Color" auxvalue="#00ff7b00"/>
+    </volume>
+    <assembly name="PCB_BottomLayer_LV_Al">
+      <physvol name="PV_LV_SOLID024_bot_Al">
+        <volumeref ref="LV_SOLID024_bot_Al"/>
+        <positionref ref="center"/>
+        <rotationref ref="identity"/>
+      </physvol>
+      <physvol name="PV_LV_SOLID025_bot_Al">
+        <volumeref ref="LV_SOLID025_bot_Al"/>
+        <positionref ref="center"/>
+        <rotationref ref="identity"/>
+      </physvol>
+    </assembly>
+  </structure>
+  <setup name="Default" version="1.0">
+    <world ref="PCB_BottomLayer_LV_Al"/>
+  </setup>
+</gdml>

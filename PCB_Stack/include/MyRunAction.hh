@@ -11,6 +11,7 @@
 #include "Constants.hh"
 #include "StaticInfo.hh"
 #include "G4UImanager.hh"
+#include "G4GenericMessenger.hh"
 
 class G4Run;
 
@@ -25,6 +26,14 @@ public:
         
         virtual void BeginOfRunAction(const G4Run*);
         virtual void EndOfRunAction(const G4Run*);
+        virtual void DefineCommands();
+
+private:
+
+        G4GenericMessenger* fMessenger = nullptr;
+        G4double Y_BeamPosition = 0.*mm;
+        G4double X_BeamPosition = 0.*mm;
+        G4double fScanWidth = 20.*mm;
 
 };
 

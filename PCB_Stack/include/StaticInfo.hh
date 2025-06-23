@@ -26,14 +26,22 @@ class StaticInfo
         static void SetNumberOfLayer(G4int NumberOfLayer) { fNumberOfLayer = NumberOfLayer; };
         
         static G4double GetScanWidth() { return fScanWidth; };
-        static void SetScanWidth(G4double ScanWidth) { fScanWidth = ScanWidth; };     
+        static void SetScanWidth(G4double ScanWidth) { fScanWidth = ScanWidth; };  
+        
+        static G4double GetBeamXPosition() { return fBeamXPosition; };
+        static void SetBeamXPosition(G4double BeamXPosition) { fBeamXPosition = BeamXPosition; };
+        
+        static G4double GetBeamYPosition() { return fBeamYPosition; };
+        static void SetBeamYPosition(G4double BeamYPosition) { fBeamYPosition = BeamYPosition; };
 
     private:
-    	
+
         static std::map<G4String, G4bool> detectorConstructionFlags;
         static G4int fRunIdOnMasterThread;
         static G4int fNumberOfLayer;
         static G4double fScanWidth; //member variable of MyPrimaryGenerator. Unit: mm
+        static G4double fBeamXPosition; //member variable of MyPrimaryGenerator. Unit: mm
+        static G4double fBeamYPosition; //member variable of MyPrimaryGenerator. Unit: mm
 
 };
 

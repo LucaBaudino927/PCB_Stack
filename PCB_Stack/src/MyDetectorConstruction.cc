@@ -133,12 +133,13 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct(){
     	
     	// Add info to Static class
 	StaticInfo::Clear();
-	StaticInfo::AddToDetectorFlagMap("SingleLayer",  		SingleLayer);
-	StaticInfo::AddToDetectorFlagMap("StackUp",  			StackUp);
-	StaticInfo::AddToDetectorFlagMap("PCB",  			PCB);
+	StaticInfo::AddToDetectorFlagMap("SingleLayer",  			SingleLayer);
+	StaticInfo::AddToDetectorFlagMap("StackUp",  				StackUp);
+	StaticInfo::AddToDetectorFlagMap("PCB",  					PCB);
+	StaticInfo::AddToDetectorFlagMap("CustomPCB",  				CustomPCB);
 	StaticInfo::AddToDetectorFlagMap("constructCoverlay", 		constructCoverlay);
-	StaticInfo::AddToDetectorFlagMap("constructMetal", 		constructMetal);
-	StaticInfo::AddToDetectorFlagMap("constructGlue", 		constructGlue);
+	StaticInfo::AddToDetectorFlagMap("constructMetal", 			constructMetal);
+	StaticInfo::AddToDetectorFlagMap("constructGlue", 			constructGlue);
 	StaticInfo::AddToDetectorFlagMap("constructDielectric", 	constructDielectric);
 	StaticInfo::AddToDetectorFlagMap("verboseDetConstruction", 	verboseDetConstr);
 	//flag per notificare la EventAction che la geometria è cambiata e quindi sono cambiati gli istogrammi da riempire
@@ -202,7 +203,7 @@ G4VPhysicalVolume* MyDetectorConstruction::Construct(){
 			// Rotation of the assembly inside the world
 			G4RotationMatrix Rm;
 			// Translation of the assembly inside the world
-			G4double offset = 0.1*cm;
+			G4double offset = 1.*cm;
 			G4ThreeVector Tm(0., 0., 0. + i*offset);
 			G4Transform3D Tr = G4Transform3D(Rm,Tm);
 			assemblyDetector->MakeImprint(logicWorld, Tr);
@@ -383,8 +384,20 @@ void MyDetectorConstruction::ConstructCustomPCB(G4AssemblyVolume* assemblyDetect
 	/*
 	for(assemblyIterator i = assemblyStore->begin(); i != assemblyStore->end(); i++){
 		G4cout<<"---ConstructPCB---GetAssemblyID(): "<<std::to_string((*i)->GetAssemblyID())<<G4endl;
-	}
+	}logicalVolumeIterator
 	*/
+
+	// visualization attributes ------------------------------------------------
+	G4VisAttributes invisible(G4VisAttributes::GetInvisible());
+	G4VisAttributes invisibleBlue(false, G4Colour::Blue());
+	G4VisAttributes invisibleGreen(false, G4Colour::Green());
+	G4VisAttributes invisibleYellow(false, G4Colour::Yellow());
+	G4VisAttributes blue(G4Colour::Blue());
+	G4VisAttributes cgray(G4Colour::Gray());
+	G4VisAttributes green(G4Colour::Green());
+	G4VisAttributes red(G4Colour::Red());
+	G4VisAttributes yellow(G4Colour::Yellow());
+	G4VisAttributes brown(G4Colour::Brown());
 	
 	G4GDMLParser parser;
 	// Uncomment the following if wish to avoid names stripping
@@ -400,125 +413,229 @@ void MyDetectorConstruction::ConstructCustomPCB(G4AssemblyVolume* assemblyDetect
 	G4Transform3D Tr;
 	
 	G4double Z = 0.*um;
-	G4double layerThickness = 1.*um;
+	G4double layerThickness = 1.001*um;
 	G4double alpideThickness = (AlpideThicknessFromMessenger != 0.) ? AlpideThicknessFromMessenger : 50.*um;
 	G4double AlThickness 	 = (AlThicknessFromMessenger != 0.)     ? AlThicknessFromMessenger     : 20.;
 	G4double KaptonThickness = (KaptonThicknessFromMessenger != 0.) ? KaptonThicknessFromMessenger : 25.;
 	G4double GlueThickness 	 = (GlueThicknessFromMessenger != 0.)   ? GlueThicknessFromMessenger   : 20.;
-	
+
 	//Parsing of PCB_LowerLayer--------------------------------------------------------------------------
 	if(verboseDetConstr) G4cout << "Parsing of PCB_LowerLayer" << G4endl;
-	parser.Read(fGDMLReadStructure[2]);
-	G4AssemblyVolume* assemblyPCBLowerLayer_kapton 	  = assemblyStore->GetAssembly(X); //AssemblyID = 4
-	G4AssemblyVolume* assemblyPCBLowerLayer_aluminium = assemblyStore->GetAssembly(Y); //AssemblyID = 4
-	for(G4int i = 0; i < KaptonThickness; i++){
+	parser.Read(fGDMLReadStructure[0]);
+	parser.Clear();
+	parser.Read(fGDMLReadStructure[1]);
+	parser.Clear();
+	G4AssemblyVolume* assemblyPCBLowerLayer_kapton 	  = assemblyStore->GetAssembly(2); //AssemblyID = 2
+	G4AssemblyVolume* assemblyPCBLowerLayer_aluminium = assemblyStore->GetAssembly(3); //AssemblyID = 3
+	
+	std::size_t counter = 0;
+	auto tripletIterator = assemblyPCBLowerLayer_kapton->GetTripletsIterator();
+	while (counter < assemblyPCBLowerLayer_kapton->TotalTriplets()) {
+		const auto& triplet = (*tripletIterator);
+		auto lv = triplet.GetVolume();
+		lv->SetVisAttributes(brown);
+		++tripletIterator;
+		++counter;
+	}
+	counter = 0;
+	tripletIterator = assemblyPCBLowerLayer_aluminium->GetTripletsIterator();
+	while (counter < assemblyPCBLowerLayer_aluminium->TotalTriplets()) {
+		const auto& triplet = (*tripletIterator);
+		auto lv = triplet.GetVolume();
+		lv->SetVisAttributes(cgray);
+		++tripletIterator;
+		++counter;
+	}
+	if(verboseDetConstr) G4cout << "Kapton Layers ==>" << G4endl;
+	for(G4int i = 0; i < KaptonThickness*1000; i++){
 		Z += layerThickness/2.;
-		Ta.setX(0.*mm); 
-		Ta.setY(0.*mm);
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+		Ta.setX(-1.66*mm); 
+		Ta.setY(-7.4*mm);
 		Ta.setZ(Z);//Ta.setZ(13.8*mm);
 		Tr = G4Transform3D(Ra,Ta);	
 		assemblyDetector->AddPlacedAssembly(assemblyPCBLowerLayer_kapton, Tr);
 		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
 	}
-	for(G4int i = 0; i < AlThickness; i++){
+	if(verboseDetConstr) G4cout << "Al Layers ==>" << G4endl;
+	for(G4int i = 0; i < AlThickness*1000; i++){
 		Z += layerThickness/2.;
-		Ta.setX(0.*mm); 
-		Ta.setY(0.*mm);
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+		Ta.setX(-1.66*mm); 
+		Ta.setY(-7.4*mm);
 		Ta.setZ(Z);//Ta.setZ(13.8*mm);
 		Tr = G4Transform3D(Ra,Ta);	
 		assemblyDetector->AddPlacedAssembly(assemblyPCBLowerLayer_aluminium, Tr);
 		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
 	}
 	if(verboseDetConstr) G4cout << "End of PCB_LowerLayer parsing" << G4endl;
+
+
+	//Parsing of Glue Layer--------------------------------------------------------------------------
+	if(verboseDetConstr) G4cout << "Parsing of Glue Layer" << G4endl;
+	parser.Read(fGDMLReadStructure[2]);
 	parser.Clear();
+	G4AssemblyVolume* assemblyGlue = assemblyStore->GetAssembly(4); //AssemblyID = 4
+	counter = 0;
+	tripletIterator = assemblyGlue->GetTripletsIterator();
+	while (counter < assemblyGlue->TotalTriplets()) {
+		const auto& triplet = (*tripletIterator);
+		auto lv = triplet.GetVolume();
+		if(verboseDetConstr) G4cout << "Assembly Glue Volume: " << lv->GetName() << ", Material: " << lv->GetMaterial()->GetName() << G4endl;
+		lv->SetMaterial(epoxyGlue);
+		lv->SetVisAttributes(yellow);
+		if(verboseDetConstr) G4cout << "Assembly Glue Volume: " << lv->GetName() << ", Material: " << lv->GetMaterial()->GetName() << G4endl;
+		++tripletIterator;
+		++counter;
+	}
+	if(verboseDetConstr) G4cout << "Glue Layers ==>" << G4endl;
+	for(G4int i = 0; i < GlueThickness*1000; i++){
+		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+		Ta.setX(-1.66*mm); 
+		Ta.setY(-7.4*mm);
+		Ta.setZ(Z);//Ta.setZ(13.8*mm);
+		Tr = G4Transform3D(Ra,Ta);	
+		assemblyDetector->AddPlacedAssembly(assemblyGlue, Tr);
+		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+	}
+	if(verboseDetConstr) G4cout << "End of Glue Layer parsing" << G4endl;
 
 	
 	//Parsing of PCB_MiddleLayer-------------------------------------------------------------------------
 	if(verboseDetConstr) G4cout << "Parsing of PCB_MiddleLayer" << G4endl;
-	parser.Read(fGDMLReadStructure[1]);
-	G4AssemblyVolume* assemblyPCBMiddleLayer_kapton    = assemblyStore->GetAssembly(X); //AssemblyID = 3
-	G4AssemblyVolume* assemblyPCBMiddleLayer_aluminium = assemblyStore->GetAssembly(Y); //AssemblyID = 3
-	for(G4int i = 0; i < KaptonThickness; i++){
+	parser.Read(fGDMLReadStructure[3]);
+	parser.Clear();
+	parser.Read(fGDMLReadStructure[4]);
+	parser.Clear();
+	G4AssemblyVolume* assemblyPCBMiddleLayer_kapton    = assemblyStore->GetAssembly(5); //AssemblyID = 4
+	G4AssemblyVolume* assemblyPCBMiddleLayer_aluminium = assemblyStore->GetAssembly(6); //AssemblyID = 5
+	counter = 0;
+	tripletIterator = assemblyPCBMiddleLayer_kapton->GetTripletsIterator();
+	while (counter < assemblyPCBMiddleLayer_kapton->TotalTriplets()) {
+		const auto& triplet = (*tripletIterator);
+		auto lv = triplet.GetVolume();
+		lv->SetVisAttributes(brown);
+		++tripletIterator;
+		++counter;
+	}
+	counter = 0;
+	tripletIterator = assemblyPCBMiddleLayer_aluminium->GetTripletsIterator();
+	while (counter < assemblyPCBMiddleLayer_aluminium->TotalTriplets()) {
+		const auto& triplet = (*tripletIterator);
+		auto lv = triplet.GetVolume();
+		lv->SetVisAttributes(cgray);
+		++tripletIterator;
+		++counter;
+	}
+	if(verboseDetConstr) G4cout << "Kapton Layers ==>" << G4endl;
+	for(G4int i = 0; i < KaptonThickness*1000; i++){
 		Z += layerThickness/2.;
-		Ta.setX(0.*mm); 
-		Ta.setY(0.*mm);
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+		Ta.setX(-1.66*mm); 
+		Ta.setY(-7.4*mm);
 		Ta.setZ(Z);//Ta.setZ(-20.8*mm);
 		Tr = G4Transform3D(Ra,Ta);	
 		assemblyDetector->AddPlacedAssembly(assemblyPCBMiddleLayer_kapton, Tr);
 		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
 	}
-	for(G4int i = 0; i < AlThickness; i++){
+	if(verboseDetConstr) G4cout << "Al Layers ==>" << G4endl;
+	for(G4int i = 0; i < AlThickness*1000; i++){
 		Z += layerThickness/2.;
-		Ta.setX(0.*mm); 
-		Ta.setY(0.*mm);
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+		Ta.setX(-1.66*mm); 
+		Ta.setY(-7.4*mm);
 		Ta.setZ(Z);//Ta.setZ(-20.8*mm);
 		Tr = G4Transform3D(Ra,Ta);	
 		assemblyDetector->AddPlacedAssembly(assemblyPCBMiddleLayer_aluminium, Tr);
 		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
 	}
 	if(verboseDetConstr) G4cout << "End of PCB_MiddleLayer parsing" << G4endl;
-	parser.Clear();
 
 	
 	//Alpide---------------------------------------------------------------------------------------------
 	if(verboseDetConstr) G4cout << "Building Alpide" << G4endl;
 	Z += alpideThickness/2.;
-	G4Box* SV = new G4Box("SV_Alpide", 1.5*cm, 0.75*cm, alpideThickness);
-	fLogicVolumeList.push_back(new G4LogicalVolume(SV, material, "LV_Alpide"));
+	if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+	G4Box* SV = new G4Box("SV_Alpide", 1.5*cm, 0.75*cm, alpideThickness/2.);
+	fLogicVolumeList.push_back(new G4LogicalVolume(SV, Si, "LV_Alpide"));
+	fLogicVolumeList.back()->SetVisAttributes(red);
 
 	// Fill the assembly by the plates
 	Ta.setX(0.*um); 
-	Ta.setY(0.*um);
+	Ta.setY(-7.4*um);
 	Ta.setZ(Z);
-	Tr = G4Transform3D(Ra,Ta);
+	Tr = G4Transform3D(G4RotationMatrix(),Ta);
 	assemblyDetector->AddPlacedVolume(fLogicVolumeList.back(), Tr);
 	Z += alpideThickness/2.;
+	if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
 	if(verboseDetConstr) G4cout << "End of Alpide building" << G4endl;
 	
 	//Parsing of PCB_UpperLayer--------------------------------------------------------------------------
 	if(verboseDetConstr) G4cout << "Parsing of PCB_UpperLayer" << G4endl;
+	parser.Read(fGDMLReadStructure[5]);
+	parser.Clear();
+	parser.Read(fGDMLReadStructure[6]);
+	parser.Clear();
 	Z += 1.*um;
-	parser.Read(fGDMLReadStructure[0]);
-	G4AssemblyVolume* assemblyPCBUpperLayer_kapton    = assemblyStore->GetAssembly(X); //AssemblyID = 2
-	G4AssemblyVolume* assemblyPCBUpperLayer_aluminium = assemblyStore->GetAssembly(Y); //AssemblyID = 2
-	for(G4int i = 0; i < KaptonThickness; i++){
+	G4AssemblyVolume* assemblyPCBUpperLayer_kapton    = assemblyStore->GetAssembly(7); //AssemblyID = 7
+	G4AssemblyVolume* assemblyPCBUpperLayer_aluminium = assemblyStore->GetAssembly(8); //AssemblyID = 8
+	counter = 0;
+	tripletIterator = assemblyPCBUpperLayer_kapton->GetTripletsIterator();
+	while (counter < assemblyPCBUpperLayer_kapton->TotalTriplets()) {
+		const auto& triplet = (*tripletIterator);
+		auto lv = triplet.GetVolume();
+		lv->SetVisAttributes(brown);
+		++tripletIterator;
+		++counter;
+	}
+	counter = 0;
+	tripletIterator = assemblyPCBUpperLayer_aluminium->GetTripletsIterator();
+	while (counter < assemblyPCBUpperLayer_aluminium->TotalTriplets()) {
+		const auto& triplet = (*tripletIterator);
+		auto lv = triplet.GetVolume();
+		lv->SetVisAttributes(cgray);
+		++tripletIterator;
+		++counter;
+	}
+	if(verboseDetConstr) G4cout << "Kapton Layers ==>" << G4endl;
+	for(G4int i = 0; i < KaptonThickness*1000; i++){
 		Z += layerThickness/2.;
-		Ta.setX(0.*mm); 
-		Ta.setY(0.*mm);
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+		Ta.setX(-1.66*mm); 
+		Ta.setY(-7.4*mm);
 		Ta.setZ(Z);//Ta.setZ(0.2*mm);
 		Tr = G4Transform3D(Ra,Ta);	
 		assemblyDetector->AddPlacedAssembly(assemblyPCBUpperLayer_kapton, Tr);
 		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
 	}
-	for(G4int i = 0; i < AlThickness; i++){
+	if(verboseDetConstr) G4cout << "Al Layers ==>" << G4endl;
+	for(G4int i = 0; i < AlThickness*1000; i++){
 		Z += layerThickness/2.;
-		Ta.setX(0.*mm); 
-		Ta.setY(0.*mm);
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
+		Ta.setX(-1.66*mm); 
+		Ta.setY(-7.4*mm);
 		Ta.setZ(Z);//Ta.setZ(0.2*mm);
 		Tr = G4Transform3D(Ra,Ta);	
 		assemblyDetector->AddPlacedAssembly(assemblyPCBUpperLayer_aluminium, Tr);
 		Z += layerThickness/2.;
+		if(verboseDetConstr) G4cout << "Z = " << Z/um << " um" << G4endl;
 	}
 	if(verboseDetConstr) G4cout << "End of PCB_UpperLayer parsing" << G4endl;
-	parser.Clear();
 	
-	
-	// visualization attributes ------------------------------------------------
+	/*
+	for(physicalVolumeIterator i = assemblyPCBUpperLayer_aluminium->GetVolumesIterator(); i != Iterators.size(i); i++){
+		(*i)->GetLogicalVolume()->SetVisAttributes(yellow);
+		//G4cout<<"---ConstructPCB---GetAssemblyID(): "<<std::to_string((*i)->GetAssemblyID())<<G4endl;
+	}
+	*/
 
-	G4VisAttributes invisible(G4VisAttributes::GetInvisible());
-	G4VisAttributes invisibleBlue(false, G4Colour::Blue());
-	G4VisAttributes invisibleGreen(false, G4Colour::Green());
-	G4VisAttributes invisibleYellow(false, G4Colour::Yellow());
-	G4VisAttributes blue(G4Colour::Blue());
-	G4VisAttributes cgray(G4Colour::Gray());
-	G4VisAttributes green(G4Colour::Green());
-	G4VisAttributes red(G4Colour::Red());
-	G4VisAttributes yellow(G4Colour::Yellow());
-	G4VisAttributes brown(G4Colour::Brown());
-
-	//fPCBUpperLayerLV->SetVisAttributes(yellow);
-	//fPCBMiddleLayerLV->SetVisAttributes(red);
-	//fPCBLowerLayerLV->SetVisAttributes(green);
 }
 
 

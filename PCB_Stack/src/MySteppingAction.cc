@@ -64,8 +64,9 @@ void MySteppingAction::UserSteppingAction(const G4Step* step){
 			if(detectorName.compare("logicWorld") != 0){
 				R_X0.push_back(R/volume->GetMaterial()->GetRadlen());
 				R = 0;
-				//G4cout<<"---steppingAction X0="<<volume->GetMaterial()->GetRadlen()
-				//					<<", X0="<<volume->GetMaterial()->GetRadlen()/CLHEP::cm<<" cm"<<G4endl;
+				//if(volume->GetMaterial()->GetName().compare("EpoxyGlue") == 0){
+				//G4cout<<"---steppingAction X0="<<volume->GetMaterial()->GetRadlen()<<", X0="<<volume->GetMaterial()->GetRadlen()/CLHEP::cm<<" cm"<<G4endl;
+				//}
 			}
 			
 			if(detectorName.compare("logicWorld") == 0){

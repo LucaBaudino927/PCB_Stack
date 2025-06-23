@@ -5,6 +5,8 @@ std::map<G4String, G4bool> StaticInfo::detectorConstructionFlags;
 G4int StaticInfo::fRunIdOnMasterThread;
 G4int StaticInfo::fNumberOfLayer;
 G4double StaticInfo::fScanWidth;
+G4double StaticInfo::fBeamXPosition;
+G4double StaticInfo::fBeamYPosition;
 
 StaticInfo::StaticInfo() {};
 

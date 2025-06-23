@@ -44,7 +44,7 @@ class G4FieldManager;
 class G4VPhysicalVolume;
 class G4GenericMessenger;
 
-typedef std::vector<G4LogicalVolume*>::iterator logicalVolumeIterator;
+typedef std::vector<G4VPhysicalVolume*>::iterator physicalVolumeIterator;
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
@@ -63,7 +63,8 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         void ConstructLayer(G4AssemblyVolume* assemblyDetector, G4Material* material, G4double Z, G4double thickness, G4int layerID, G4String type);
 	void ConstructStackup(G4AssemblyVolume* assemblyDetector);
 	void ConstructPCB(G4AssemblyVolume* assemblyDetector);
-        
+        void ConstructCustomPCB(G4AssemblyVolume* assemblyDetector);
+                
         G4GenericMessenger *fMessenger = nullptr;
         G4double xWorld, yWorld, zWorld;
         G4Box *solidWorld;
