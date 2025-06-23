@@ -40,7 +40,6 @@ int main(int argc, char** argv){
         gdmlFileNames.push_back(argv[5]);
         gdmlFileNames.push_back(argv[6]);
         gdmlFileNames.push_back(argv[7]);
-	G4cout<<"test"<<G4endl;
         //First: construction -> creates detectors
         runManager->SetUserInitialization(new MyDetectorConstruction(gdmlFileNames));
         //Second: physics

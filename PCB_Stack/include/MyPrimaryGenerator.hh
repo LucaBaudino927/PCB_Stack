@@ -54,7 +54,7 @@ private:
 	G4double fSigmaAngle = 1.*deg;
 	G4bool fRandomizePrimary = false;
 	G4bool fRandomizeBeamPosition = false;
-	G4double fScanWidth = 10.*mm;
+	G4double fScanWidth = 20.*mm;
     
 };
 

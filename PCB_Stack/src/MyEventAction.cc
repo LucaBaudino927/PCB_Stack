@@ -52,8 +52,8 @@ void MyEventAction::EndOfEventAction(const G4Event* anEvent){
 	auto analysisManager = G4AnalysisManager::Instance();
 	
 	//chiudo le ntuple riempite in MySteppingAction
-	analysisManager->AddNtupleRow(2);
-	analysisManager->AddNtupleRow(3);
+	//analysisManager->AddNtupleRow(2);
+	//analysisManager->AddNtupleRow(3);
 
 	// MySensitiveDetector hits
 	G4double totalEnergyDep = 0.;
@@ -70,7 +70,7 @@ void MyEventAction::EndOfEventAction(const G4Event* anEvent){
 		}
 	}
 	if(totalEnergyDep != 0.) analysisManager->FillNtupleDColumn(0, 0, totalEnergyDep);
-	analysisManager->AddNtupleRow(1);
+	//analysisManager->AddNtupleRow(1);
 	
 	
 	G4double sum = 0;
@@ -79,7 +79,7 @@ void MyEventAction::EndOfEventAction(const G4Event* anEvent){
 		sum += R_X0_Vector[i];
 	}
 	analysisManager->FillNtupleDColumn(0, 0, sum);
-	analysisManager->AddNtupleRow(0);
+	//analysisManager->AddNtupleRow(0);
 	
 	analysisManager->FillH2(0, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), sum);
 	analysisManager->FillH2(1, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), 1);

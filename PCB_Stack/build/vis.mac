@@ -1,7 +1,7 @@
 /control/verbose 0
 /control/saveHistory
 
-/detector/verboseDetConstruction true
+/detector/verboseDetConstruction false
 
 /detector/SingleLayer false
 /detector/LayerThickness 50 #um
@@ -26,9 +26,15 @@
 /detector/NofPCBLayers 10
 
 /detector/CustomPCB true
-/detector/NofPCBLayers 1
-	
+/detector/NofCustomPCBLayers 1
+/detector/AlpideThickness 50 um
+/detector/AlThickness 20 um
+/detector/KaptonThickness 25 um
+/detector/GlueThickness 20	um
 
+/myRun/beamXPosition 0 mm
+/myRun/beamYPosition -5 mm
+/myRun/scanWidth 10 mm
 /run/numberOfThreads 8
 /run/printProgress 0
 /run/verbose 1
@@ -57,5 +63,7 @@
 
 #If you want to add a scale in the viewer
 /vis/scene/add/scale 5 cm
+/vis/scene/notifyHandlers
+/vis/viewer/rebuild
 
 #/run/beamOn 1
