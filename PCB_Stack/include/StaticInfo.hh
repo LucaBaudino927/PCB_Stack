@@ -34,6 +34,9 @@ class StaticInfo
         static G4double GetBeamYPosition() { return fBeamYPosition; };
         static void SetBeamYPosition(G4double BeamYPosition) { fBeamYPosition = BeamYPosition; };
 
+        static G4double GetResolution() { return resolution; };
+        static void SetResolution(G4double res) { resolution = res; };
+
     private:
 
         static std::map<G4String, G4bool> detectorConstructionFlags;
@@ -42,6 +45,7 @@ class StaticInfo
         static G4double fScanWidth; //member variable of MyPrimaryGenerator. Unit: mm
         static G4double fBeamXPosition; //member variable of MyPrimaryGenerator. Unit: mm
         static G4double fBeamYPosition; //member variable of MyPrimaryGenerator. Unit: mm
+        static G4double resolution; // Used in MyRunAction to define the bin size of histograms, Unit: mm
 
 };
 

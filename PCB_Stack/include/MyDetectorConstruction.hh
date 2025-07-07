@@ -31,11 +31,6 @@
 //User definted
 #include "MySensitiveDetector.hh"
 #include "PCBSensitiveDetector.hh"
-#include "Glue.hh"
-#include "Alpide.hh"
-#include "Kapton.hh"
-#include "Copper.hh"
-#include "SolderBall.hh"
 #include "StaticInfo.hh"
 #include "Constants.hh"
 #include "G4LogicalVolumeStore.hh"

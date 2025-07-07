@@ -50,33 +50,131 @@ void MaterialBudget_newMethod(){
   TString fileName = "../build/output0.root";
   TFile* file = new TFile(fileName);
   	  
+  TH2D *materialBudgetXY = (TH2D*)file->Get("Material Budget XY");
+  //materialBudgetXY->Draw("colz");
+  cout << "materialBudgetXY Bin content = " << materialBudgetXY->GetBinContent(300,500) << endl;
+  cout << "materialBudgetXY Bin error = "   << materialBudgetXY->GetBinError(300,500)   << endl;
+
   TCanvas* c1 = new TCanvas("c1", "", 20, 20, 1000, 1000);
   c1->Divide(1,1);
   c1->cd(1);
-  TH2D *materialBudgetXY = (TH2D*)file->Get("Material Budget XY");
-  materialBudgetXY->Draw("colz");
+  TH2D *fNOfEventsXY = (TH2D*)file->Get("Number of Events XY");
+  fNOfEventsXY->Draw("colz");
+  cout << "fNOfEventsXY Bin content = " << fNOfEventsXY->GetBinContent(300,500) << endl;
+  cout << "fNOfEventsXY Bin error = "   << fNOfEventsXY->GetBinError(300,500)   << endl;
   
-  cout << "Bin content = " << materialBudgetXY->GetBinContent(100,100) << endl;
-  cout << "Bin error = "   << materialBudgetXY->GetBinError(100,100)   << endl;
-
   TCanvas* c2 = new TCanvas("c2", "", 20, 20, 1000, 1000);
   c2->Divide(1,1);
   c2->cd(1);
-  TH2D *fNOfEventsXY = (TH2D*)file->Get("Number of Events XY");
-  fNOfEventsXY->Draw("colz");
+  TH2D *averageMaterialBudgetXY = (TH2D*)materialBudgetXY->Clone();
+  averageMaterialBudgetXY->Divide(fNOfEventsXY);
+  averageMaterialBudgetXY->GetZaxis()->SetTitle("X/X0 %");
+  averageMaterialBudgetXY->Scale(100.); // Convert to percentage
+  averageMaterialBudgetXY->Draw("colz");
+  cout << "averageMaterialBudgetXY Bin content = " << averageMaterialBudgetXY->GetBinContent(300,500) << endl;
+  cout << "averageMaterialBudgetXY Bin error = "   << averageMaterialBudgetXY->GetBinError(300,500)   << endl;
 
-  cout << "Bin content = " << fNOfEventsXY->GetBinContent(100,100) << endl;
-  cout << "Bin error = "   << fNOfEventsXY->GetBinError(100,100)   << endl;
   
+
+
+
+  TH2D *deltaEnergyXY = (TH2D*)file->Get("Sum of Energy Loss for all events XY");
+  //deltaEnergyXY->SetTitle("Sum of Energy Loss for all events XY");
+  //deltaEnergyXY->SetName("Sum of Energy Loss for all events XY");
+  //deltaEnergyXY->Draw("colz");
+  cout << "deltaEnergyXY Bin content = " << deltaEnergyXY->GetBinContent(300,500) << endl;
+  cout << "deltaEnergyXY Bin error = "   << deltaEnergyXY->GetBinError(300,500)   << endl;
+
   TCanvas* c3 = new TCanvas("c3", "", 20, 20, 1000, 1000);
   c3->Divide(1,1);
   c3->cd(1);
-  TH2D *averageMaterialBudgetXY = (TH2D*)materialBudgetXY->Clone();
-  averageMaterialBudgetXY->Divide(fNOfEventsXY);
-  averageMaterialBudgetXY->Draw("colz");
+  TH2D *averageDeltaEnergyXY = (TH2D*)deltaEnergyXY->Clone();
+  averageDeltaEnergyXY->Divide(fNOfEventsXY);
+  averageDeltaEnergyXY->SetTitle("Average Energy Loss for each event XY");
+  averageDeltaEnergyXY->SetName("Average Energy Loss for each event XY");
+  averageDeltaEnergyXY->Draw("colz");
+  cout << "averageDeltaEnergyXY Bin content = " << averageDeltaEnergyXY->GetBinContent(300,500) << endl;
+  cout << "averageDeltaEnergyXY Bin error = "   << averageDeltaEnergyXY->GetBinError(300,500)   << endl;
 
-  cout << "Bin content = " << averageMaterialBudgetXY->GetBinContent(100,100) << endl;
-  cout << "Bin error = "   << averageMaterialBudgetXY->GetBinError(100,100)   << endl;
+  //Average Delta Energy with cuts XY
+  //The average delta energy is calculated as the ratio between the sum of delta energies for all events
+  //and the number of events in each bin, excluding bins with delta energy greater than 100 keV.
+  //This is done to remove outliers due to stucked tracks in the simulation.
+  TCanvas* c4 = new TCanvas("c4", "", 20, 20, 1000, 1000);
+  c4->Divide(1,1);
+  c4->cd(1);
+  TH2D *deltaEnergyWithCutsXY = (TH2D*)deltaEnergyXY->Clone();
+  deltaEnergyWithCutsXY->Divide(fNOfEventsXY);
+  deltaEnergyWithCutsXY->SetTitle("Delta Energy with Cuts XY");
+  deltaEnergyWithCutsXY->SetName("Delta Energy with Cuts XY");
+  for(int i = 0; i < deltaEnergyWithCutsXY->GetNbinsX(); i++){
+	for(int j = 0; j < deltaEnergyWithCutsXY->GetNbinsY(); j++){
+	  if(deltaEnergyWithCutsXY->GetBinContent(i+1,j+1) > 0.1){ //100 keV
+		deltaEnergyWithCutsXY->SetBinContent(i+1,j+1,0.1);
+		deltaEnergyWithCutsXY->SetBinError(i+1,j+1,0.1);
+	  }
+	}
+  }
+  deltaEnergyWithCutsXY->Draw("colz");
+  cout << "deltaEnergyWithCutsXY Bin content = " << deltaEnergyWithCutsXY->GetBinContent(300,500) << endl;
+  cout << "deltaEnergyWithCutsXY Bin error = "   << deltaEnergyWithCutsXY->GetBinError(300,500)   << endl;
+
+
+
+  TH2D *thicknessXY = (TH2D*)file->Get("Sum of Thicknesses for all events XY");
+  //thicknessXY->Draw("colz");
+  cout << "thicknessXY Bin content = " << thicknessXY->GetBinContent(300,500) << endl;
+  cout << "thicknessXY Bin error = "   << thicknessXY->GetBinError(300,500)   << endl;
+
+  //Average Thickness XY
+  //The average thickness is calculated as the ratio between the sum of thicknesses for all events
+  //and the number of events in each bin.
+  TCanvas* c5 = new TCanvas("c5", "", 20, 20, 1000, 1000);
+  c5->Divide(1,1);
+  c5->cd(1);
+  TH2D *averageThicknessXY = (TH2D*)thicknessXY->Clone();
+  averageThicknessXY->SetTitle("Average Thickness for each event XY");
+  averageThicknessXY->SetName("Average Thickness for each event XY");
+  averageThicknessXY->GetZaxis()->SetTitle("d [cm]");
+  averageThicknessXY->Divide(fNOfEventsXY);
+  for(int i = 0; i < averageThicknessXY->GetNbinsX(); i++){
+	for(int j = 0; j < averageThicknessXY->GetNbinsY(); j++){
+	  if(averageThicknessXY->GetBinContent(i+1,j+1) > 0.300){ //300 um
+		averageThicknessXY->SetBinContent(i+1,j+1,0.300);
+		averageThicknessXY->SetBinError(i+1,j+1,0.300);
+	  }
+	  if(averageThicknessXY->GetBinContent(i+1,j+1) < 0.001 && averageThicknessXY->GetBinContent(i+1,j+1) > 0.){ //1 um
+		averageThicknessXY->SetBinContent(i+1,j+1,0.001);
+		averageThicknessXY->SetBinError(i+1,j+1,0.001);
+	  }
+	}
+  }
+  averageThicknessXY->Scale(0.1); // Convert data from mm to cm
+  averageThicknessXY->Draw("colz");
+  cout << "averageThicknessXY Bin content = " << averageThicknessXY->GetBinContent(300,500) << endl;
+  cout << "averageThicknessXY Bin error = "   << averageThicknessXY->GetBinError(300,500)   << endl;
+
+  // dE/dxbar = DeltaE / (rho * pathLength)
+  // dE/dx    = DeltaE / pathLength
+  TCanvas* c6 = new TCanvas("c6", "", 20, 20, 1000, 1000);
+  c6->Divide(1,1);
+  c6->cd(1);
+  TH2D *dEdxXY = (TH2D*)deltaEnergyWithCutsXY->Clone();
+  dEdxXY->Divide(averageThicknessXY);
+  for(int i = 0; i < dEdxXY->GetNbinsX(); i++){
+	for(int j = 0; j < dEdxXY->GetNbinsY(); j++){
+	  if(dEdxXY->GetBinContent(i+1,j+1) > 5.){
+		dEdxXY->SetBinContent(i+1,j+1,5.);
+		dEdxXY->SetBinError(i+1,j+1,5.);
+	  }
+	}
+  }
+  dEdxXY->SetTitle("dE/dx XY");
+  dEdxXY->SetName("dE/dx XY");
+  dEdxXY->GetZaxis()->SetTitle("dE/dx [MeV/cm]");
+  dEdxXY->Draw("colz");
+  cout << "dEdxXY Bin content = " << dEdxXY->GetBinContent(300,500) << endl;
+  cout << "dEdxXY Bin error = "   << dEdxXY->GetBinError(300,500)   << endl;
 
   /*
 

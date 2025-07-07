@@ -1,6 +1,9 @@
+/control/verbose 0
+/run/verbose 0
+/vis/verbose errors
+
 #reset geometry after the first initialization
 /run/printProgress 0
-
 
 #
 # Defaults:
@@ -8,26 +11,13 @@
 #	add new geometries here
 #
 /detector/verboseDetConstruction false
-/detector/mapsFoil true
-
-#
-# Defaults:
-#
-#	add new geometries here
-#
-/detector/constructAlpidePads true
-/detector/constructEpoxyGlueLayer true
-/detector/constructKaptonLayer true
-/detector/constructCopperLayer true
-/detector/constructSolderBalls true
-/detector/constructPCB false
-/detector/alpideXDimension 30. #mm
-/detector/alpideYDimension 15. #mm
-/detector/alpideThickness 50. #um
-/detector/alpidePadRadius 150. #um
-/detector/glueThickness 25. #um
-/detector/kaptonThickness 50. #um
-/detector/copperThickness 5. #um
+/detector/StackUp false
+/detector/CustomPCB true
+/detector/NofCustomPCBLayers 1
+/detector/AlpideThickness 50 um
+/detector/AlThickness 20 um
+/detector/KaptonThickness 25 um
+/detector/GlueThickness 20	um
 
 # Initialize kernel
 /run/reinitializeGeometry
@@ -38,7 +28,16 @@
 # Defaults:
 #
 #	add new settings here
-#
+
+/myRun/beamXPosition 0 mm
+/myRun/beamYPosition -10 mm
+/myRun/scanWidth 30 mm
+/myRun/resolution 0.05
+
+/generator/randomizeBeamPosition true
+/generator/momentum 10 GeV
+/gun/particle proton
+
 
 /vis/drawVolume
 

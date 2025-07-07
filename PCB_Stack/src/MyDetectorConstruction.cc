@@ -67,17 +67,17 @@ void MyDetectorConstruction::DefineMaterials(){
 	 ************************************************************************/
 	 
 	auto nist = G4NistManager::Instance();
-        // ######## AIR
+    // ######## AIR
 	worldMat = nist->FindOrBuildMaterial("G4_Galactic");
 
 	
-        // ######## Si
+    // ######## Si
 	Si = nist->FindOrBuildMaterial("G4_Si");
 
-        // ######## Kapton
+    // ######## Kapton
 	//KaptonMaterial = nist->FindOrBuildMaterial("G4_KAPTON");
 
-        // ######## Al
+    // ######## Al
 	Al = nist->FindOrBuildMaterial("G4_Al");
 	
 	// ######## Cu
@@ -219,6 +219,7 @@ void MyDetectorConstruction::ConstructLayer(G4AssemblyVolume* assemblyDetector, 
 	G4RotationMatrix Ra;
 	G4ThreeVector Ta;
 	G4Transform3D Tr;
+	// layer 4cm x 4 cm x thickness
 	G4Box* SV = new G4Box("SV"+type+std::to_string(layerID), 2.*cm, 2.*cm, thickness*0.5);
 	fLogicVolumeList.push_back(new G4LogicalVolume(SV, material, "LV"+type+std::to_string(layerID)));
 
@@ -235,43 +236,58 @@ void MyDetectorConstruction::ConstructStackup(G4AssemblyVolume* assemblyDetector
 	coverlayThickness 	=	(coverlayThicknessFromMessenger != 0.) 		? coverlayThicknessFromMessenger*um 	: 100.*um;
 	metalThickness	 	=	(metalThicknessFromMessenger != 0.) 		? metalThicknessFromMessenger*um  	: 100.*um;
 	glueThickness	 	=	(glueThicknessFromMessenger != 0.) 		? glueThicknessFromMessenger*um   	: 100.*um;
-	dielectricThickness 	=	(dielectricThicknessFromMessenger != 0.) 	? dielectricThicknessFromMessenger*um 	: 100.*um;
-	
+	dielectricThickness =	(dielectricThicknessFromMessenger != 0.) 	? dielectricThicknessFromMessenger*um 	: 100.*um;
+
+	//Thickness check
+	if(verboseDetConstr) {
+		G4cout << "-----------------------------------------------------------------" << G4endl;
+		G4cout << "Coverlay thickness = " << coverlayThickness/um << " um" << G4endl;
+		G4cout << "Metal thickness = " << metalThickness/um << " um" << G4endl;
+		G4cout << "Glue thickness = " << glueThickness/um << " um" << G4endl;
+		G4cout << "Dielectric thickness = " << dielectricThickness/um << " um" << G4endl;
+		G4cout << "-----------------------------------------------------------------" << G4endl;
+	}
+
 	double Z = 0.;
 	//each layer is made of 2 metal layers and one polyimide layer
 	//if NofDielectricLayers == 0 ==> Al,Glue,Al. if NofDielectricLayers == 1 ==> Al,Glue,Al, kapton, Al,Glue,Al
 	//if NofLayersFromMessenger == 2 ==> NofDielectricLayers = NofLayersFromMessenger - 1
 	if(constructCoverlay){
-		ConstructLayer(assemblyDetector, coverlayMaterial, Z, coverlayThickness, 0, "coverlay");
+		ConstructLayer(assemblyDetector, coverlayMaterial, Z, coverlayThickness, 0, "coverlay_stackup");
 		if(verboseDetConstr) G4cout << G4endl << "Coverlay built at position Z = " << Z << G4endl;
 		Z += coverlayThickness;
+		Z += 1*um; // Add a small gap to see the layers better
 	}
         for(int i = 0; i < NofLayersFromMessenger; i++){
         	if(constructMetal){
-        		ConstructLayer(assemblyDetector, metalMaterial, Z, metalThickness, i+1, "metal1_");
+        		ConstructLayer(assemblyDetector, metalMaterial, Z, metalThickness, i+1, "metal1_stackup");
         		if(verboseDetConstr) G4cout << G4endl << "Metal layer built at position Z = " << Z << G4endl;
         		Z += metalThickness;
+				Z += 1*um; // Add a small gap to see the layers better
         	}
         	if(constructGlue){
-        		ConstructLayer(assemblyDetector, glueMaterial, Z, glueThickness, i+1, "glue");
+        		ConstructLayer(assemblyDetector, glueMaterial, Z, glueThickness, i+1, "glue_stackup");
         		if(verboseDetConstr) G4cout << G4endl << "Glue layer built at position Z = " << Z << G4endl;
         		Z += glueThickness;
+				Z += 1*um; // Add a small gap to see the layers better
         	}
         	if(constructMetal){
-        		ConstructLayer(assemblyDetector, metalMaterial, Z, metalThickness, i, "metal2_");
+        		ConstructLayer(assemblyDetector, metalMaterial, Z, metalThickness, i, "metal2_stackup");
         		if(verboseDetConstr) G4cout << G4endl << "Metal layer built at position Z = " << Z << G4endl;
         		Z += metalThickness;
+				Z += 1*um; // Add a small gap to see the layers better
         	}
         	if(constructDielectric){
         		if(i != NofLayersFromMessenger - 1){
-				ConstructLayer(assemblyDetector, dielectricMaterial, Z, dielectricThickness, i+1, "dielectric");
+				ConstructLayer(assemblyDetector, dielectricMaterial, Z, dielectricThickness, i+1, "dielectric_stackup");
 				if(verboseDetConstr) G4cout << G4endl << "Dielectric layer built at position Z = " << Z << G4endl;
 				Z += dielectricThickness;
+				Z += 1*um; // Add a small gap to see the layers better
 			}
         	}
         }
         if(constructCoverlay){
-        	ConstructLayer(assemblyDetector, coverlayMaterial, Z, coverlayThickness, 999, "coverlay");
+        	ConstructLayer(assemblyDetector, coverlayMaterial, Z, coverlayThickness, 999, "coverlay_stackup");
         	if(verboseDetConstr) G4cout << G4endl << "Coverlay built at position Z = " << Z << G4endl;
         }
         
@@ -413,7 +429,7 @@ void MyDetectorConstruction::ConstructCustomPCB(G4AssemblyVolume* assemblyDetect
 	G4Transform3D Tr;
 	
 	G4double Z = 0.*um;
-	G4double layerThickness = 1.001*um;
+	G4double layerThickness = 1.1*um;
 	G4double alpideThickness = (AlpideThicknessFromMessenger != 0.) ? AlpideThicknessFromMessenger : 50.*um;
 	G4double AlThickness 	 = (AlThicknessFromMessenger != 0.)     ? AlThicknessFromMessenger     : 20.;
 	G4double KaptonThickness = (KaptonThicknessFromMessenger != 0.) ? KaptonThicknessFromMessenger : 25.;

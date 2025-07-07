@@ -7,6 +7,7 @@ G4int StaticInfo::fNumberOfLayer;
 G4double StaticInfo::fScanWidth;
 G4double StaticInfo::fBeamXPosition;
 G4double StaticInfo::fBeamYPosition;
+G4double StaticInfo::resolution;
 
 StaticInfo::StaticInfo() {};
 

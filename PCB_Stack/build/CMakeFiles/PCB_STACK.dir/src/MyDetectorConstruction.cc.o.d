@@ -916,17 +916,4 @@ CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o: \
  /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4AttDefStore.hh \
  /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/StaticInfo.hh \
  /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/PCBSensitiveDetector.hh \
- /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/Glue.hh \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4Material.hh \
- /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/Alpide.hh \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4SubtractionSolid.hh \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4BooleanSolid.hh \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4DisplacedSolid.hh \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4VBooleanProcessor.hh \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4BooleanSolid.icc \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4VSolid.hh \
- /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/Kapton.hh \
- /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/Copper.hh \
- /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/SolderBall.hh \
- /home/temp/Geant4/geant4-v11.3.2-install/include/Geant4/G4Sphere.hh \
  /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/include/Constants.hh

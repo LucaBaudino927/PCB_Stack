@@ -105,7 +105,7 @@ void MyPrimaryGenerator::DefineCommands()
 	randomCmd.SetDefaultValue("false");
 	
 	// momentum command
-	auto& momentumCmd = fMessenger->DeclarePropertyWithUnit("momentum", "GeV", fMomentum, "Mean momentum of primaries in MeV");
+	auto& momentumCmd = fMessenger->DeclarePropertyWithUnit("momentum", "GeV", fMomentum, "Mean momentum of primaries in GeV");
 	momentumCmd.SetParameterName("p", true);
 	momentumCmd.SetRange("p>=0.");
 	momentumCmd.SetDefaultValue("10.");
