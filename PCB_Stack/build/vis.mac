@@ -35,7 +35,9 @@
 /myRun/beamXPosition 0 mm
 /myRun/beamYPosition -5 mm
 /myRun/scanWidth 10 mm
-/run/numberOfThreads 8
+/myRun/resolution 0.05
+
+/run/numberOfThreads 7
 /run/printProgress 0
 /run/verbose 1
 /run/initialize

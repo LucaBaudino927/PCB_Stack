@@ -34,6 +34,7 @@ private:
         G4double Y_BeamPosition = 0.*mm;
         G4double X_BeamPosition = 0.*mm;
         G4double fScanWidth = 20.*mm;
+        G4double resolution = 0.05; // Unit: mm
 
 };
 

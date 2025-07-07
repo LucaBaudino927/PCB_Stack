@@ -41,6 +41,7 @@ void MyRunAction::BeginOfRunAction(const G4Run* run){
 		StaticInfo::SetScanWidth(fScanWidth);
 		StaticInfo::SetBeamYPosition(Y_BeamPosition);
 		StaticInfo::SetBeamXPosition(X_BeamPosition);
+		StaticInfo::SetResolution(resolution);
 	}
 	//G4cout<<"---MyRunAction---run->GetRunID(): "<<run->GetRunID()<<G4endl;
 	//G4cout<<"---MyRunAction---StaticInfo::GetRunIdOnMasterThread(): "<<StaticInfo::GetRunIdOnMasterThread()<<G4endl;
@@ -76,60 +77,115 @@ void MyRunAction::BeginOfRunAction(const G4Run* run){
 	analysisManager->CreateNtupleDColumn("PrimaryBeamEnergy");			
 	analysisManager->FinishNtuple(3);
 	
+
 	if(IsMaster()){
+
 		//se L = 10 mm -> 100 bin mi danno bin da 100 um
 		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
-		G4int id = analysisManager->CreateH2("Material Budget XY", "Material Budget XY",  fScanWidth/0.05, 
+		G4int id = analysisManager->CreateH2("Material Budget XY", "Material Budget XY",  fScanWidth/resolution, 
 																						-fScanWidth/2. + X_BeamPosition, 
 																						fScanWidth/2. + X_BeamPosition, 
-																						fScanWidth/0.05, 
+																						fScanWidth/resolution, 
 																						-fScanWidth/2. + Y_BeamPosition,
 																						fScanWidth/2. + Y_BeamPosition);
 		//analysisManager->SetH2Title(G4int id, const G4String& title);
 		analysisManager->SetH2XAxisTitle(id, "X [mm]");
 		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
 		analysisManager->SetH2ZAxisTitle(id, "X/X0");
-	}else{
+
 		//se L = 10 mm -> 100 bin mi danno bin da 100 um
 		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
-		G4int id = analysisManager->CreateH2("Material Budget XY", "Material Budget XY",  StaticInfo::GetScanWidth()/0.05, 
-																						-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
-																						StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
-																						StaticInfo::GetScanWidth()/0.05, 
-																						-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition(), 
-																						StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition());
-		//analysisManager->SetH2Title(G4int id, const G4String& title);
-		analysisManager->SetH2XAxisTitle(id, "X [mm]");
-		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
-		analysisManager->SetH2ZAxisTitle(id, "X/X0");
-	}
-	
-	if(IsMaster()){
-		//se L = 10 mm -> 100 bin mi danno bin da 100 um
-		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
-		G4int id = analysisManager->CreateH2("Number of Events XY", "Number of Events XY",  fScanWidth/0.05, 
+		id = analysisManager->CreateH2("Number of Events XY", "Number of Events XY",  fScanWidth/resolution, 
 																				  -fScanWidth/2. + X_BeamPosition, 
 																				  fScanWidth/2. + X_BeamPosition, 
-																				  fScanWidth/0.05, 
+																				  fScanWidth/resolution, 
 																				  -fScanWidth/2. + Y_BeamPosition,
 																				  fScanWidth/2. + Y_BeamPosition);
 		//analysisManager->SetH2Title(G4int id, const G4String& title);
 		analysisManager->SetH2XAxisTitle(id, "X [mm]");
 		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
 		analysisManager->SetH2ZAxisTitle(id, "NofEvents");
-	}else{	
+
 		//se L = 10 mm -> 100 bin mi danno bin da 100 um
 		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
-		G4int id = analysisManager->CreateH2("Number of Events XY", "Number of Events XY",  StaticInfo::GetScanWidth()/0.05, 
+		id = analysisManager->CreateH2("Sum of Energy Loss for all events XY", "Sum of Energy Loss for all events XY",  fScanWidth/resolution, 
+																				  		-fScanWidth/2. + X_BeamPosition, 
+																				  		fScanWidth/2. + X_BeamPosition, 
+																						fScanWidth/resolution, 
+																				  		-fScanWidth/2. + Y_BeamPosition,
+																				  		fScanWidth/2. + Y_BeamPosition);
+		//analysisManager->SetH2Title(G4int id, const G4String& title);
+		analysisManager->SetH2XAxisTitle(id, "X [mm]");
+		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
+		analysisManager->SetH2ZAxisTitle(id, "#DeltaE [MeV]");
+
+		//se L = 10 mm -> 100 bin mi danno bin da 100 um
+		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
+		id = analysisManager->CreateH2("Sum of Thicknesses for all events XY", "Sum of Thicknesses for all events XY",  fScanWidth/resolution, 
+																				  		-fScanWidth/2. + X_BeamPosition, 
+																				  		fScanWidth/2. + X_BeamPosition, 
+																						fScanWidth/resolution, 
+																				  		-fScanWidth/2. + Y_BeamPosition,
+																				  		fScanWidth/2. + Y_BeamPosition);
+		//analysisManager->SetH2Title(G4int id, const G4String& title);
+		analysisManager->SetH2XAxisTitle(id, "X [mm]");
+		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
+		analysisManager->SetH2ZAxisTitle(id, "d [mm]");
+
+	}else{
+
+		//se L = 10 mm -> 100 bin mi danno bin da 100 um
+		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
+		G4int id = analysisManager->CreateH2("Material Budget XY", "Material Budget XY",  StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
+																						-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
+																						StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
+																						StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
+																						-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition(), 
+																						StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition());
+		//analysisManager->SetH2Title(G4int id, const G4String& title);
+		analysisManager->SetH2XAxisTitle(id, "X [mm]");
+		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
+		analysisManager->SetH2ZAxisTitle(id, "X/X0");
+
+		//se L = 10 mm -> 100 bin mi danno bin da 100 um
+		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
+		id = analysisManager->CreateH2("Number of Events XY", "Number of Events XY",  StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
 																				  -StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
 																				  StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
-																				  StaticInfo::GetScanWidth()/0.05, 
+																				  StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
 																				  -StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition(),
 																				  StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition());
 		//analysisManager->SetH2Title(G4int id, const G4String& title);
 		analysisManager->SetH2XAxisTitle(id, "X [mm]");
 		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
 		analysisManager->SetH2ZAxisTitle(id, "NofEvents");
+
+		//se L = 10 mm -> 100 bin mi danno bin da 100 um
+		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
+		id = analysisManager->CreateH2("Sum of Energy Loss for all events XY", "Sum of Energy Loss for all events XY",  StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
+																				  		-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
+																				  		StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
+																				  		StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
+																				  		-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition(),
+																				  		StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition());
+		//analysisManager->SetH2Title(G4int id, const G4String& title);
+		analysisManager->SetH2XAxisTitle(id, "X [mm]");
+		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
+		analysisManager->SetH2ZAxisTitle(id, "#DeltaE [MeV]");
+
+		//se L = 10 mm -> 100 bin mi danno bin da 100 um
+		//standard L = 10 mm divisi in 200 bin da -5 a +5 -> bin da 50x50 um
+		id = analysisManager->CreateH2("Sum of Thicknesses for all events XY", "Sum of Thicknesses for all events XY",  StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
+																				  		-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
+																				  		StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamXPosition(), 
+																						StaticInfo::GetScanWidth()/StaticInfo::GetResolution(), 
+																				  		-StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition(),
+																				  		StaticInfo::GetScanWidth()/2. + StaticInfo::GetBeamYPosition());
+		//analysisManager->SetH2Title(G4int id, const G4String& title);
+		analysisManager->SetH2XAxisTitle(id, "X [mm]");
+		analysisManager->SetH2YAxisTitle(id, "Y [mm]");
+		analysisManager->SetH2ZAxisTitle(id, "d [mm]");
+
 	}
 	
 	// Set ntuple output file
@@ -171,7 +227,13 @@ void MyRunAction::DefineCommands()
 	scanWidthCmd.SetParameterName("scanW", true);
 	scanWidthCmd.SetRange("scanW>=0.");
 	scanWidthCmd.SetDefaultValue("10");
-  
+
+	// resolution command
+	auto& resolutionCmd = fMessenger->DeclareProperty("resolution", resolution, "Bin size for XY histograms. Unit: mm");
+	resolutionCmd.SetParameterName("res", true);
+	resolutionCmd.SetRange("res>0.");
+	resolutionCmd.SetDefaultValue("0.05");
+
 }
 
 

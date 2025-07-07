@@ -1,3 +1,0 @@
-# For loop to change the beamYPosition from y = -4.4 mm to -7.4 mm with step of 1 mm
-# Y_BeamPosition = -4.4 -5.4 -6.4 -7.4
-/control/loop scandetY.mac Y_BeamPosition -4.4 -7.4 -1

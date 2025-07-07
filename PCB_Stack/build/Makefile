@@ -211,102 +211,6 @@ sim.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/sim.cc.s
 .PHONY : sim.cc.s
 
-src/Alpide.o: src/Alpide.cc.o
-.PHONY : src/Alpide.o
-
-# target to build an object file
-src/Alpide.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o
-.PHONY : src/Alpide.cc.o
-
-src/Alpide.i: src/Alpide.cc.i
-.PHONY : src/Alpide.i
-
-# target to preprocess a source file
-src/Alpide.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Alpide.cc.i
-.PHONY : src/Alpide.cc.i
-
-src/Alpide.s: src/Alpide.cc.s
-.PHONY : src/Alpide.s
-
-# target to generate assembly for a file
-src/Alpide.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Alpide.cc.s
-.PHONY : src/Alpide.cc.s
-
-src/Copper.o: src/Copper.cc.o
-.PHONY : src/Copper.o
-
-# target to build an object file
-src/Copper.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Copper.cc.o
-.PHONY : src/Copper.cc.o
-
-src/Copper.i: src/Copper.cc.i
-.PHONY : src/Copper.i
-
-# target to preprocess a source file
-src/Copper.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Copper.cc.i
-.PHONY : src/Copper.cc.i
-
-src/Copper.s: src/Copper.cc.s
-.PHONY : src/Copper.s
-
-# target to generate assembly for a file
-src/Copper.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Copper.cc.s
-.PHONY : src/Copper.cc.s
-
-src/Glue.o: src/Glue.cc.o
-.PHONY : src/Glue.o
-
-# target to build an object file
-src/Glue.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Glue.cc.o
-.PHONY : src/Glue.cc.o
-
-src/Glue.i: src/Glue.cc.i
-.PHONY : src/Glue.i
-
-# target to preprocess a source file
-src/Glue.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Glue.cc.i
-.PHONY : src/Glue.cc.i
-
-src/Glue.s: src/Glue.cc.s
-.PHONY : src/Glue.s
-
-# target to generate assembly for a file
-src/Glue.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Glue.cc.s
-.PHONY : src/Glue.cc.s
-
-src/Kapton.o: src/Kapton.cc.o
-.PHONY : src/Kapton.o
-
-# target to build an object file
-src/Kapton.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o
-.PHONY : src/Kapton.cc.o
-
-src/Kapton.i: src/Kapton.cc.i
-.PHONY : src/Kapton.i
-
-# target to preprocess a source file
-src/Kapton.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Kapton.cc.i
-.PHONY : src/Kapton.cc.i
-
-src/Kapton.s: src/Kapton.cc.s
-.PHONY : src/Kapton.s
-
-# target to generate assembly for a file
-src/Kapton.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/Kapton.cc.s
-.PHONY : src/Kapton.cc.s
-
 src/MyActionInitialization.o: src/MyActionInitialization.cc.o
 .PHONY : src/MyActionInitialization.o
 
@@ -523,30 +427,6 @@ src/PCBSensitiveDetector.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.s
 .PHONY : src/PCBSensitiveDetector.cc.s
 
-src/SolderBall.o: src/SolderBall.cc.o
-.PHONY : src/SolderBall.o
-
-# target to build an object file
-src/SolderBall.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o
-.PHONY : src/SolderBall.cc.o
-
-src/SolderBall.i: src/SolderBall.cc.i
-.PHONY : src/SolderBall.i
-
-# target to preprocess a source file
-src/SolderBall.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.i
-.PHONY : src/SolderBall.cc.i
-
-src/SolderBall.s: src/SolderBall.cc.s
-.PHONY : src/SolderBall.s
-
-# target to generate assembly for a file
-src/SolderBall.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PCB_STACK.dir/build.make CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.s
-.PHONY : src/SolderBall.cc.s
-
 src/StaticInfo.o: src/StaticInfo.cc.o
 .PHONY : src/StaticInfo.o
 
@@ -588,18 +468,6 @@ help:
 	@echo "... sim.o"
 	@echo "... sim.i"
 	@echo "... sim.s"
-	@echo "... src/Alpide.o"
-	@echo "... src/Alpide.i"
-	@echo "... src/Alpide.s"
-	@echo "... src/Copper.o"
-	@echo "... src/Copper.i"
-	@echo "... src/Copper.s"
-	@echo "... src/Glue.o"
-	@echo "... src/Glue.i"
-	@echo "... src/Glue.s"
-	@echo "... src/Kapton.o"
-	@echo "... src/Kapton.i"
-	@echo "... src/Kapton.s"
 	@echo "... src/MyActionInitialization.o"
 	@echo "... src/MyActionInitialization.i"
 	@echo "... src/MyActionInitialization.s"
@@ -627,9 +495,6 @@ help:
 	@echo "... src/PCBSensitiveDetector.o"
 	@echo "... src/PCBSensitiveDetector.i"
 	@echo "... src/PCBSensitiveDetector.s"
-	@echo "... src/SolderBall.o"
-	@echo "... src/SolderBall.i"
-	@echo "... src/SolderBall.s"
 	@echo "... src/StaticInfo.o"
 	@echo "... src/StaticInfo.i"
 	@echo "... src/StaticInfo.s"

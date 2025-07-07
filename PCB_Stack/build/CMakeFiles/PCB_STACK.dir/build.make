@@ -83,66 +83,10 @@ CMakeFiles/PCB_STACK.dir/sim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCB_STACK.dir/sim.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/sim.cc -o CMakeFiles/PCB_STACK.dir/sim.cc.s
 
-CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
-CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o: ../src/Alpide.cc
-CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o -MF CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Alpide.cc
-
-CMakeFiles/PCB_STACK.dir/src/Alpide.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCB_STACK.dir/src/Alpide.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Alpide.cc > CMakeFiles/PCB_STACK.dir/src/Alpide.cc.i
-
-CMakeFiles/PCB_STACK.dir/src/Alpide.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCB_STACK.dir/src/Alpide.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Alpide.cc -o CMakeFiles/PCB_STACK.dir/src/Alpide.cc.s
-
-CMakeFiles/PCB_STACK.dir/src/Copper.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
-CMakeFiles/PCB_STACK.dir/src/Copper.cc.o: ../src/Copper.cc
-CMakeFiles/PCB_STACK.dir/src/Copper.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PCB_STACK.dir/src/Copper.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/Copper.cc.o -MF CMakeFiles/PCB_STACK.dir/src/Copper.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/Copper.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Copper.cc
-
-CMakeFiles/PCB_STACK.dir/src/Copper.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCB_STACK.dir/src/Copper.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Copper.cc > CMakeFiles/PCB_STACK.dir/src/Copper.cc.i
-
-CMakeFiles/PCB_STACK.dir/src/Copper.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCB_STACK.dir/src/Copper.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Copper.cc -o CMakeFiles/PCB_STACK.dir/src/Copper.cc.s
-
-CMakeFiles/PCB_STACK.dir/src/Glue.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
-CMakeFiles/PCB_STACK.dir/src/Glue.cc.o: ../src/Glue.cc
-CMakeFiles/PCB_STACK.dir/src/Glue.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PCB_STACK.dir/src/Glue.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/Glue.cc.o -MF CMakeFiles/PCB_STACK.dir/src/Glue.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/Glue.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Glue.cc
-
-CMakeFiles/PCB_STACK.dir/src/Glue.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCB_STACK.dir/src/Glue.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Glue.cc > CMakeFiles/PCB_STACK.dir/src/Glue.cc.i
-
-CMakeFiles/PCB_STACK.dir/src/Glue.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCB_STACK.dir/src/Glue.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Glue.cc -o CMakeFiles/PCB_STACK.dir/src/Glue.cc.s
-
-CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
-CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o: ../src/Kapton.cc
-CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o -MF CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Kapton.cc
-
-CMakeFiles/PCB_STACK.dir/src/Kapton.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCB_STACK.dir/src/Kapton.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Kapton.cc > CMakeFiles/PCB_STACK.dir/src/Kapton.cc.i
-
-CMakeFiles/PCB_STACK.dir/src/Kapton.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCB_STACK.dir/src/Kapton.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/Kapton.cc -o CMakeFiles/PCB_STACK.dir/src/Kapton.cc.s
-
 CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o: ../src/MyActionInitialization.cc
 CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MyActionInitialization.cc
 
 CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.i: cmake_force
@@ -156,7 +100,7 @@ CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o: ../src/MyDetectorConstruction.cc
 CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MyDetectorConstruction.cc
 
 CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.i: cmake_force
@@ -170,7 +114,7 @@ CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o: ../src/MyEventAction.cc
 CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MyEventAction.cc
 
 CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.i: cmake_force
@@ -184,7 +128,7 @@ CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o: ../src/MyPrimaryGenerator.cc
 CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MyPrimaryGenerator.cc
 
 CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.i: cmake_force
@@ -198,7 +142,7 @@ CMakeFiles/PCB_STACK.dir/src/MyPrimaryGenerator.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o: ../src/MyRunAction.cc
 CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MyRunAction.cc
 
 CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.i: cmake_force
@@ -212,7 +156,7 @@ CMakeFiles/PCB_STACK.dir/src/MyRunAction.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o: ../src/MySensitiveDetector.cc
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MySensitiveDetector.cc
 
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.i: cmake_force
@@ -226,7 +170,7 @@ CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o: ../src/MySensitiveDetectorHit.cc
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MySensitiveDetectorHit.cc
 
 CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.i: cmake_force
@@ -240,7 +184,7 @@ CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: ../src/MySteppingAction.cc
 CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o -MF CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/MySteppingAction.cc
 
 CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.i: cmake_force
@@ -254,7 +198,7 @@ CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.s: cmake_force
 CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o: ../src/PCBSensitiveDetector.cc
 CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o -MF CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/PCBSensitiveDetector.cc
 
 CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.i: cmake_force
@@ -265,24 +209,10 @@ CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/PCBSensitiveDetector.cc -o CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.s
 
-CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
-CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o: ../src/SolderBall.cc
-CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o -MF CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/SolderBall.cc
-
-CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/SolderBall.cc > CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.i
-
-CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/SolderBall.cc -o CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.s
-
 CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o: CMakeFiles/PCB_STACK.dir/flags.make
 CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o: ../src/StaticInfo.cc
 CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o: CMakeFiles/PCB_STACK.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o -MF CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o.d -o CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o -c /home/temp/geant4_workdir/PCB_Stack/PCB_Stack/src/StaticInfo.cc
 
 CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.i: cmake_force
@@ -296,10 +226,6 @@ CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.s: cmake_force
 # Object files for target PCB_STACK
 PCB_STACK_OBJECTS = \
 "CMakeFiles/PCB_STACK.dir/sim.cc.o" \
-"CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o" \
-"CMakeFiles/PCB_STACK.dir/src/Copper.cc.o" \
-"CMakeFiles/PCB_STACK.dir/src/Glue.cc.o" \
-"CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o" \
 "CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o" \
 "CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o" \
 "CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o" \
@@ -309,17 +235,12 @@ PCB_STACK_OBJECTS = \
 "CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o" \
 "CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o" \
 "CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o" \
-"CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o" \
 "CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o"
 
 # External object files for target PCB_STACK
 PCB_STACK_EXTERNAL_OBJECTS =
 
 PCB_STACK: CMakeFiles/PCB_STACK.dir/sim.cc.o
-PCB_STACK: CMakeFiles/PCB_STACK.dir/src/Alpide.cc.o
-PCB_STACK: CMakeFiles/PCB_STACK.dir/src/Copper.cc.o
-PCB_STACK: CMakeFiles/PCB_STACK.dir/src/Glue.cc.o
-PCB_STACK: CMakeFiles/PCB_STACK.dir/src/Kapton.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/src/MyActionInitialization.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/src/MyDetectorConstruction.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/src/MyEventAction.cc.o
@@ -329,7 +250,6 @@ PCB_STACK: CMakeFiles/PCB_STACK.dir/src/MySensitiveDetector.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/src/MySensitiveDetectorHit.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/src/MySteppingAction.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/src/PCBSensitiveDetector.cc.o
-PCB_STACK: CMakeFiles/PCB_STACK.dir/src/SolderBall.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/src/StaticInfo.cc.o
 PCB_STACK: CMakeFiles/PCB_STACK.dir/build.make
 PCB_STACK: /home/temp/Geant4/geant4-v11.3.2-install/lib/libG4Tree.so
@@ -372,7 +292,7 @@ PCB_STACK: /home/temp/Geant4/geant4-v11.3.2-install/lib/libG4global.so
 PCB_STACK: /home/temp/Geant4/geant4-v11.3.2-install/lib/libG4clhep.so
 PCB_STACK: /home/temp/Geant4/geant4-v11.3.2-install/lib/libG4ptl.so.3.0.0
 PCB_STACK: CMakeFiles/PCB_STACK.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable PCB_STACK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/temp/geant4_workdir/PCB_Stack/PCB_Stack/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable PCB_STACK"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PCB_STACK.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

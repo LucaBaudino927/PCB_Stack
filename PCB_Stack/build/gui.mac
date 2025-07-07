@@ -15,6 +15,7 @@
 /gui/addMenu run Run
 /gui/addButton run run1 "/control/execute run1.mac"
 /gui/addButton run run2 "/control/execute run2.mac"
+/gui/addButton run run_StackUp "/control/execute run_StackUp.mac"
 /gui/addButton run multipleRuns "/control/execute det.mac"
 /gui/addButton run beamOn1000 "/run/beamOn 1000"
 #

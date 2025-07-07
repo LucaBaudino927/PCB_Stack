@@ -11,13 +11,23 @@
 #	add new geometries here
 #
 /detector/verboseDetConstruction false
-/detector/StackUp false
-/detector/CustomPCB true
-/detector/NofCustomPCBLayers 1
-/detector/AlpideThickness 50 um
-/detector/AlThickness 20 um
-/detector/KaptonThickness 25 um
-/detector/GlueThickness 20	um
+/detector/LayerThickness 50 #um
+/detector/LayerMaterial G4_Si
+
+/detector/StackUp true
+/detector/NofLayers 2
+/detector/coverlayThickness 50 #um
+/detector/metalThickness 50 #um
+/detector/glueThickness 50 #um
+/detector/dielectricThickness 50 #um
+/detector/constructCoverlay true
+/detector/constructMetal true
+/detector/constructGlue true
+/detector/constructDielectric true
+/detector/coverlayMaterial G4_KAPTON
+/detector/metalMaterial G4_Al
+/detector/glueMaterial G4_Cu
+/detector/dielectricMaterial G4_KAPTON
 
 # Initialize kernel
 /run/reinitializeGeometry

@@ -21,6 +21,7 @@ void MyEventAction::BeginOfEventAction(const G4Event*){
 		auto LVStore = G4LogicalVolumeStore::GetInstance();
 		for(logicalVolumeIterator i = LVStore->begin(); i != LVStore->end(); i++){
 			if((*i)->GetName().compare("logicWorld") == 0) continue;
+			if(((*i)->GetName().find("_stackup") == std::string::npos)) continue;
 			detHCName.push_back((*i)->GetName()+"/MySensitiveDetectorColl");
 		}
 	}
@@ -77,12 +78,18 @@ void MyEventAction::EndOfEventAction(const G4Event* anEvent){
 	std::vector<G4double> R_X0_Vector = fSteppingAction->GetRX0Vector();
 	for(int i = 0; i < R_X0_Vector.size(); i++){
 		sum += R_X0_Vector[i];
+		if(StaticInfo::GetDetectorFlag("verboseDetConstruction")){
+			G4cout << "---EndOfEventAction: R_X0_Vector = " << R_X0_Vector[i] << ", X = " << fSteppingAction->GetBeamXPosition()/um 
+																		   << " um, Y = " << fSteppingAction->GetBeamYPosition()/um << " um" << G4endl;
+		}
 	}
 	analysisManager->FillNtupleDColumn(0, 0, sum);
 	//analysisManager->AddNtupleRow(0);
 	
 	analysisManager->FillH2(0, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), sum);
 	analysisManager->FillH2(1, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), 1);
+	analysisManager->FillH2(2, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), -fSteppingAction->GetDeltaE());
+	analysisManager->FillH2(3, fSteppingAction->GetBeamXPosition(), fSteppingAction->GetBeamYPosition(), fSteppingAction->GetPathLength());
 
 
 	// print --------------------------------------------------------------------------------------------------------

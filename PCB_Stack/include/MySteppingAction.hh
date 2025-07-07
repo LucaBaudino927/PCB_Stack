@@ -6,6 +6,7 @@
 #include "G4UserSteppingAction.hh"
 #include "G4Step.hh"
 #include "G4AnalysisManager.hh"
+#include "G4TrackVector.hh"
 
 class MySteppingAction : public G4UserSteppingAction
 {
@@ -19,6 +20,8 @@ public:
 	std::vector<G4double> GetRX0Vector() { return R_X0; };
 	G4double GetBeamXPosition() { return X; };
 	G4double GetBeamYPosition() { return Y; };
+	G4double GetDeltaE() { return deltaE; };
+	G4double GetPathLength() { return pathLength; };
     
 private:
 
@@ -30,7 +33,10 @@ private:
 	G4double R;
 	G4double X;
 	G4double Y;
-    
+	G4double deltaE;
+	G4double pathLength;
+	G4String particleName;
+
 };
 
 #endif
